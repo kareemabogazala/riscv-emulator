@@ -50,7 +50,8 @@
         "unordered_map": "cpp",
         "vector": "cpp",
         "algorithm": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "random": "cpp"
     },
     "cmake.sourceDirectory": "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/riscv-emulator"
 }

@@ -100,10 +100,24 @@ CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_imem.cpp -o CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.s
 
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_bus.cpp
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o -MF CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o.d -o CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_bus.cpp
+
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_bus.cpp > CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.i
+
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_bus.cpp -o CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.s
+
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_general.cpp
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o -MF CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o.d -o CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_general.cpp
 
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.s: cmake_forc
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_regs_mix.cpp
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o -MF CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o.d -o CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_regs_mix.cpp
 
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.s: cmake_for
 CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/regs_test/test_regs.cpp
 CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o -MF CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o.d -o CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/regs_test/test_regs.cpp
 
 CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.s: cmake_force
 CMakeFiles/run_tests.dir/tests/test_main.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/tests/test_main.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/test_main.cpp
 CMakeFiles/run_tests.dir/tests/test_main.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run_tests.dir/tests/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run_tests.dir/tests/test_main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/tests/test_main.cpp.o -MF CMakeFiles/run_tests.dir/tests/test_main.cpp.o.d -o CMakeFiles/run_tests.dir/tests/test_main.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/test_main.cpp
 
 CMakeFiles/run_tests.dir/tests/test_main.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/run_tests.dir/tests/test_main.cpp.s: cmake_force
 CMakeFiles/run_tests.dir/src/regs.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/src/regs.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp
 CMakeFiles/run_tests.dir/src/regs.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run_tests.dir/src/regs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run_tests.dir/src/regs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/regs.cpp.o -MF CMakeFiles/run_tests.dir/src/regs.cpp.o.d -o CMakeFiles/run_tests.dir/src/regs.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp
 
 CMakeFiles/run_tests.dir/src/regs.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/run_tests.dir/src/regs.cpp.s: cmake_force
 CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp
 CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o -MF CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o.d -o CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp
 
 CMakeFiles/run_tests.dir/src/Memory/memory.cpp.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/run_tests.dir/src/Memory/memory.cpp.s: cmake_force
 CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp
 CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o -MF CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o.d -o CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp
 
 CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.s: cmake_force
 CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp
 CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o -MF CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o.d -o CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp
 
 CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.i: cmake_force
@@ -212,10 +226,25 @@ CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp -o CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.s
 
+CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp
+CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o -MF CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o.d -o CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp
+
+CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp > CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.i
+
+CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp -o CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.s
+
 # Object files for target run_tests
 run_tests_OBJECTS = \
 "CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.o" \
 "CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.o" \
+"CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o" \
 "CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o" \
 "CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o" \
 "CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o" \
@@ -223,13 +252,15 @@ run_tests_OBJECTS = \
 "CMakeFiles/run_tests.dir/src/regs.cpp.o" \
 "CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o" \
 "CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o" \
-"CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o"
+"CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o" \
+"CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o"
 
 # External object files for target run_tests
 run_tests_EXTERNAL_OBJECTS =
 
 run_tests: CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.o
+run_tests: CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o
 run_tests: CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o
@@ -238,9 +269,10 @@ run_tests: CMakeFiles/run_tests.dir/src/regs.cpp.o
 run_tests: CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o
 run_tests: CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o
 run_tests: CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o
+run_tests: CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o
 run_tests: CMakeFiles/run_tests.dir/build.make
 run_tests: CMakeFiles/run_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable run_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp" "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp" "CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o.d"
+  "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp" "CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp" "CMakeFiles/emulator.dir/src/Memory/memory.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Memory/memory.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/main.cpp" "CMakeFiles/emulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/main.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp" "CMakeFiles/emulator.dir/src/regs.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/regs.cpp.o.d"

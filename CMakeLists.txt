@@ -44,6 +44,7 @@ add_executable(run_tests
     src/Memory/memory.cpp
     src/Memory/DMEM.cpp
     src/Memory/IMEM.cpp
+    src/Memory/MemoryBus.cpp
 )
 
 # Include paths for run_tests

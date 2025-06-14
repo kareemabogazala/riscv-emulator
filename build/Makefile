@@ -196,6 +196,33 @@ src/Memory/IMEM.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.s
 .PHONY : src/Memory/IMEM.cpp.s
 
+src/Memory/MemoryBus.o: src/Memory/MemoryBus.cpp.o
+.PHONY : src/Memory/MemoryBus.o
+
+# target to build an object file
+src/Memory/MemoryBus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o
+.PHONY : src/Memory/MemoryBus.cpp.o
+
+src/Memory/MemoryBus.i: src/Memory/MemoryBus.cpp.i
+.PHONY : src/Memory/MemoryBus.i
+
+# target to preprocess a source file
+src/Memory/MemoryBus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.i
+.PHONY : src/Memory/MemoryBus.cpp.i
+
+src/Memory/MemoryBus.s: src/Memory/MemoryBus.cpp.s
+.PHONY : src/Memory/MemoryBus.s
+
+# target to generate assembly for a file
+src/Memory/MemoryBus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.s
+.PHONY : src/Memory/MemoryBus.cpp.s
+
 src/Memory/memory.o: src/Memory/memory.cpp.o
 .PHONY : src/Memory/memory.o
 
@@ -322,6 +349,30 @@ tests/memory_test/test_imem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.s
 .PHONY : tests/memory_test/test_imem.cpp.s
 
+tests/memory_test/test_memory_bus.o: tests/memory_test/test_memory_bus.cpp.o
+.PHONY : tests/memory_test/test_memory_bus.o
+
+# target to build an object file
+tests/memory_test/test_memory_bus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o
+.PHONY : tests/memory_test/test_memory_bus.cpp.o
+
+tests/memory_test/test_memory_bus.i: tests/memory_test/test_memory_bus.cpp.i
+.PHONY : tests/memory_test/test_memory_bus.i
+
+# target to preprocess a source file
+tests/memory_test/test_memory_bus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.i
+.PHONY : tests/memory_test/test_memory_bus.cpp.i
+
+tests/memory_test/test_memory_bus.s: tests/memory_test/test_memory_bus.cpp.s
+.PHONY : tests/memory_test/test_memory_bus.s
+
+# target to generate assembly for a file
+tests/memory_test/test_memory_bus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.s
+.PHONY : tests/memory_test/test_memory_bus.cpp.s
+
 tests/memory_test/test_memory_general.o: tests/memory_test/test_memory_general.cpp.o
 .PHONY : tests/memory_test/test_memory_general.o
 
@@ -434,6 +485,9 @@ help:
 	@echo "... src/Memory/IMEM.o"
 	@echo "... src/Memory/IMEM.i"
 	@echo "... src/Memory/IMEM.s"
+	@echo "... src/Memory/MemoryBus.o"
+	@echo "... src/Memory/MemoryBus.i"
+	@echo "... src/Memory/MemoryBus.s"
 	@echo "... src/Memory/memory.o"
 	@echo "... src/Memory/memory.i"
 	@echo "... src/Memory/memory.s"
@@ -449,6 +503,9 @@ help:
 	@echo "... tests/memory_test/test_imem.o"
 	@echo "... tests/memory_test/test_imem.i"
 	@echo "... tests/memory_test/test_imem.s"
+	@echo "... tests/memory_test/test_memory_bus.o"
+	@echo "... tests/memory_test/test_memory_bus.i"
+	@echo "... tests/memory_test/test_memory_bus.s"
 	@echo "... tests/memory_test/test_memory_general.o"
 	@echo "... tests/memory_test/test_memory_general.i"
 	@echo "... tests/memory_test/test_memory_general.s"
