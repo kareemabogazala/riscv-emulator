@@ -72,10 +72,52 @@ include CMakeFiles/emulator.dir/flags.make
 CMakeFiles/emulator.dir/codegen:
 .PHONY : CMakeFiles/emulator.dir/codegen
 
+CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: CMakeFiles/emulator.dir/flags.make
+CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp
+CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: CMakeFiles/emulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o -MF CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o.d -o CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp
+
+CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp > CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.i
+
+CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp -o CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.s
+
+CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o: CMakeFiles/emulator.dir/flags.make
+CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp
+CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o: CMakeFiles/emulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o -MF CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o.d -o CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp
+
+CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp > CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.i
+
+CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp -o CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.s
+
+CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: CMakeFiles/emulator.dir/flags.make
+CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp
+CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: CMakeFiles/emulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/emulator.dir/src/Memory/memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emulator.dir/src/Memory/memory.cpp.o -MF CMakeFiles/emulator.dir/src/Memory/memory.cpp.o.d -o CMakeFiles/emulator.dir/src/Memory/memory.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp
+
+CMakeFiles/emulator.dir/src/Memory/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emulator.dir/src/Memory/memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp > CMakeFiles/emulator.dir/src/Memory/memory.cpp.i
+
+CMakeFiles/emulator.dir/src/Memory/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emulator.dir/src/Memory/memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp -o CMakeFiles/emulator.dir/src/Memory/memory.cpp.s
+
 CMakeFiles/emulator.dir/src/main.cpp.o: CMakeFiles/emulator.dir/flags.make
 CMakeFiles/emulator.dir/src/main.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/main.cpp
 CMakeFiles/emulator.dir/src/main.cpp.o: CMakeFiles/emulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/emulator.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/emulator.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emulator.dir/src/main.cpp.o -MF CMakeFiles/emulator.dir/src/main.cpp.o.d -o CMakeFiles/emulator.dir/src/main.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/main.cpp
 
 CMakeFiles/emulator.dir/src/main.cpp.i: cmake_force
@@ -89,7 +131,7 @@ CMakeFiles/emulator.dir/src/main.cpp.s: cmake_force
 CMakeFiles/emulator.dir/src/regs.cpp.o: CMakeFiles/emulator.dir/flags.make
 CMakeFiles/emulator.dir/src/regs.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp
 CMakeFiles/emulator.dir/src/regs.cpp.o: CMakeFiles/emulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/emulator.dir/src/regs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/emulator.dir/src/regs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emulator.dir/src/regs.cpp.o -MF CMakeFiles/emulator.dir/src/regs.cpp.o.d -o CMakeFiles/emulator.dir/src/regs.cpp.o -c /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp
 
 CMakeFiles/emulator.dir/src/regs.cpp.i: cmake_force
@@ -102,17 +144,23 @@ CMakeFiles/emulator.dir/src/regs.cpp.s: cmake_force
 
 # Object files for target emulator
 emulator_OBJECTS = \
+"CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o" \
+"CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o" \
+"CMakeFiles/emulator.dir/src/Memory/memory.cpp.o" \
 "CMakeFiles/emulator.dir/src/main.cpp.o" \
 "CMakeFiles/emulator.dir/src/regs.cpp.o"
 
 # External object files for target emulator
 emulator_EXTERNAL_OBJECTS =
 
+emulator: CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o
+emulator: CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o
+emulator: CMakeFiles/emulator.dir/src/Memory/memory.cpp.o
 emulator: CMakeFiles/emulator.dir/src/main.cpp.o
 emulator: CMakeFiles/emulator.dir/src/regs.cpp.o
 emulator: CMakeFiles/emulator.dir/build.make
 emulator: CMakeFiles/emulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable emulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable emulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

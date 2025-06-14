@@ -1,5 +1,5 @@
-CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o: \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/regs_test/test_regs.cpp \
+CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o: \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_regs_mix.cpp \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/external/catch.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
@@ -853,4 +853,7 @@ CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/regs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip

@@ -1,4 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o"
+  "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o.d"
+  "CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o"
+  "CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o.d"
+  "CMakeFiles/emulator.dir/src/Memory/memory.cpp.o"
+  "CMakeFiles/emulator.dir/src/Memory/memory.cpp.o.d"
   "CMakeFiles/emulator.dir/src/main.cpp.o"
   "CMakeFiles/emulator.dir/src/main.cpp.o.d"
   "CMakeFiles/emulator.dir/src/regs.cpp.o"
