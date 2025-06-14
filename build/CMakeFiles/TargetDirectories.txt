@@ -1,0 +1,4 @@
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles/emulator.dir
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles/run_tests.dir
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles/edit_cache.dir
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles/rebuild_cache.dir

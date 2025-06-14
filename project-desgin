@@ -1,0 +1,24 @@
+riscv-emulator/
+├── CMakeLists.txt
+├── include/
+│   ├── riscv.h              # Main emulator loop & CPU state
+│   ├── fetch.h
+│   ├── decode.h
+│   ├── execute.h
+│   ├── memory_stage.h
+│   ├── write_back.h
+│   ├── control_unit.h       # NEW: Generates control signals
+│   ├── stage.h              # NEW: Base class for stages
+│   ├── imem.h               # NEW: Instruction memory abstraction
+│   ├── dmem.h               # NEW: Data memory abstraction
+├── src/
+│   ├── main.cpp
+│   ├── riscv.cpp
+│   ├── fetch.cpp
+│   ├── decode.cpp
+│   ├── execute.cpp
+│   ├── memory_stage.cpp
+│   ├── write_back.cpp
+│   ├── control_unit.cpp     # NEW
+│   ├── imem.cpp             # NEW
+│   ├── dmem.cpp             # NEW

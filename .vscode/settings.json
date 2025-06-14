@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdexcept": "cpp",
+        "variant": "cpp",
+        "iostream": "cpp"
+    },
+    "cmake.sourceDirectory": "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/riscv-emulator"
+}

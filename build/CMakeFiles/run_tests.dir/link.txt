@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o CMakeFiles/run_tests.dir/src/regs.cpp.o -o run_tests
