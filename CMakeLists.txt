@@ -4,25 +4,47 @@ project(riscv_emulator)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Include paths
-include_directories(include)
+# ============================
+# ========== SOURCES =========
+# ============================
 
-# Emulator build
-file(GLOB SOURCES "src/*.cpp")
-add_executable(emulator ${SOURCES})
+# Main emulator sources
+file(GLOB EMULATOR_SOURCES
+    "src/*.cpp"
+    "src/Memory/*.cpp"
+)
+
+# ============================
+# ========== EXECUTABLE ======
+# ============================
+
+add_executable(emulator ${EMULATOR_SOURCES})
 
 # ============================
 # ========== TESTS ===========
 # ============================
 
-# Include Catch2 header
-include_directories(external)
+# Include paths
+include_directories(
+    include
+    external
+)
 
-# Collect test files
-file(GLOB TEST_SOURCES "tests/regs_test/*.cpp")
+# Collect test sources
+file(GLOB TEST_SOURCES
+    "tests/test_main.cpp"
+    "tests/regs_test/*.cpp"
+    "tests/memory_test/*.cpp"
+)
 
-# Build test executable
-add_executable(run_tests ${TEST_SOURCES} src/regs.cpp)  # <-- Manually link needed src
+# Test executable
+add_executable(run_tests
+    ${TEST_SOURCES}
+    src/regs.cpp
+    src/Memory/memory.cpp
+    src/Memory/DMEM.cpp
+    src/Memory/IMEM.cpp
+)
 
-# Link additional include folders
+# Include paths for run_tests
 target_include_directories(run_tests PRIVATE include external)
