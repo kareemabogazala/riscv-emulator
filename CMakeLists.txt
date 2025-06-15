@@ -5,47 +5,58 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # ============================
-# ========== SOURCES =========
+# ========== INCLUDE =========
 # ============================
 
-# Main emulator sources
-file(GLOB EMULATOR_SOURCES
-    "src/*.cpp"
-    "src/Memory/*.cpp"
-)
-
-# ============================
-# ========== EXECUTABLE ======
-# ============================
-
-add_executable(emulator ${EMULATOR_SOURCES})
-
-# ============================
-# ========== TESTS ===========
-# ============================
-
-# Include paths
 include_directories(
     include
     external
 )
 
-# Collect test sources
-file(GLOB TEST_SOURCES
-    "tests/test_main.cpp"
-    "tests/regs_test/*.cpp"
-    "tests/memory_test/*.cpp"
+# ============================
+# ========== SOURCES =========
+# ============================
+
+# Gather all emulator source files
+file(GLOB_RECURSE EMULATOR_SOURCES
+    "src/*.cpp"
 )
 
-# Test executable
+# Separate out main.cpp so it can be excluded from test target
+set(EMULATOR_SOURCES_NO_MAIN "")
+foreach(source ${EMULATOR_SOURCES})
+    if(NOT source MATCHES ".*src/main.cpp$")
+        list(APPEND EMULATOR_SOURCES_NO_MAIN ${source})
+    endif()
+endforeach()
+
+# ============================
+# ========== EXECUTABLE ======
+# ============================
+
+# Emulator with real main.cpp
+add_executable(emulator
+    ${EMULATOR_SOURCES}
+)
+
+target_include_directories(emulator PRIVATE include external)
+
+# ============================
+# ========== TESTS ===========
+# ============================
+
+# Gather test sources
+file(GLOB_RECURSE TEST_SOURCES
+    "tests/*.cpp"
+)
+
+# Build run_tests (without main.cpp from src)
 add_executable(run_tests
     ${TEST_SOURCES}
-    src/regs.cpp
-    src/Memory/memory.cpp
-    src/Memory/DMEM.cpp
-    src/Memory/IMEM.cpp
-    src/Memory/MemoryBus.cpp
+    ${EMULATOR_SOURCES_NO_MAIN}
 )
 
-# Include paths for run_tests
 target_include_directories(run_tests PRIVATE include external)
+
+# Link libraries if needed (e.g., Catch2)
+# target_link_libraries(run_tests ...)

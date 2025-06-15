@@ -53,5 +53,6 @@
         "iomanip": "cpp",
         "random": "cpp"
     },
-    "cmake.sourceDirectory": "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/riscv-emulator"
+    "cmake.sourceDirectory": "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/riscv-emulator",
+    "C_Cpp.errorSquiggles": "disabled"
 }

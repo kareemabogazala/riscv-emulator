@@ -25,6 +25,9 @@ public:
     {
         throw std::runtime_error("IMem is read-only");
     }
+
+    // Allow loading code during initialization only
+    void load_code(const std::vector<uint8_t> &bytes, uint32_t offset = 0);
 };
 
 #endif // IMEM_H

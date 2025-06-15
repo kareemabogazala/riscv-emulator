@@ -1,6 +1,6 @@
-CMakeFiles/run_tests.dir/src/regs.cpp.o: \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/regs.cpp \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/regs.h \
+CMakeFiles/run_tests.dir/src/Regs.cpp.o: \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Regs.cpp \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Regs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
