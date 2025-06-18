@@ -1,5 +1,6 @@
 #include "InstructionFormat/RType.h"
 #include "InstructionFormat/JType.h"
+#include "InstructionFormat/IType.h"
 // In future: include other types like IType, UType, etc.
 #include "Utils/DecoderUtils.h"
 
@@ -11,6 +12,8 @@ std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode)
         return std::make_unique<RType>();
     case 0x6F: // JAL opcode
         return std::make_unique<JType>();
+    case 0x13: // I-type ALU instructions (addi, andi, ori, etc.)
+        return std::make_unique<IType>();
     default:
         throw std::runtime_error("Unknown instruction format for opcode: " + std::to_string(opcode));
     }
@@ -106,5 +109,28 @@ ALUOp determineALUOp(uint8_t opcode, uint8_t funct3, uint8_t funct7)
         if (funct3 == 0b011)
             return ALUOp::SLTU;
     }
+    else if (opcode == 0b0010011)
+    { // I-type ALU instructions
+        switch (funct3)
+        {
+        case 0b000:
+            return ALUOp::ADD; // ADDI
+        case 0b111:
+            return ALUOp::AND; // ANDI
+        case 0b110:
+            return ALUOp::OR; // ORI
+        case 0b100:
+            return ALUOp::XOR; // XORI
+        case 0b010:
+            return ALUOp::SLT; // SLTI
+        case 0b011:
+            return ALUOp::SLTU; // SLTIU
+        case 0b001:
+            return ALUOp::SLL; // SLLI
+        case 0b101:
+            return (funct7 == 0b0100000) ? ALUOp::SRA : ALUOp::SRL; // SRAI or SRLI
+        }
+    }
+
     return ALUOp::NONE;
 }

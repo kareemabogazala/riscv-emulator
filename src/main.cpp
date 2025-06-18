@@ -16,13 +16,16 @@ int main()
     RISCV cpu(bus);
 
   
-    cpu.regs.write(2, 10);
-    cpu.regs.write(3, 32);
-  //  cpu.regs.dump();
-    imem.load_code_from_file("../AssemblyCode/jal.bin", 0);
+  
+    cpu.regs.dump();
+    imem.load_code_from_file("../AssemblyCode/i_type_test.bin", 0);
 
     // Run CPU for 3 cycles to fetch all 3 instructions
-    cpu.run(15);
-    std::cout<<"alu result is : [ 0x"<< std::hex <<cpu.ex_mem.alu_result<<" ]"<<std::endl;
+    cpu.run(1);
+
+    cpu.regs.dump();
+
+
+    std::cout << "alu result is : [ 0x" << std::hex << cpu.ex_mem.alu_result << " ]" << std::endl;
     return 0;
 }

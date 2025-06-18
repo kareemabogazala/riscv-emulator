@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Core/ALU.cpp" "CMakeFiles/run_tests.dir/src/Core/ALU.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/Core/ALU.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/DebugConfig.cpp" "CMakeFiles/run_tests.dir/src/DebugConfig.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/DebugConfig.cpp.o.d"
+  "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/IType.cpp" "CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/JType.cpp" "CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/RTpe.cpp" "CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp" "CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o.d"
@@ -24,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Stages/MemoryStage.cpp" "CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Stages/WritebackStage.cpp" "CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Utils/DecoderUtiles.cpp" "CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o" "gcc" "CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o.d"
+  "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/InstType_test/test_I-Type.cpp" "CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/InstType_test/test_R-Type.cpp" "CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_dmem.cpp" "CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_imem.cpp" "CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.o" "gcc" "CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.o.d"

@@ -196,6 +196,33 @@ src/DebugConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.s
 .PHONY : src/DebugConfig.cpp.s
 
+src/InstructionFormat/IType.o: src/InstructionFormat/IType.cpp.o
+.PHONY : src/InstructionFormat/IType.o
+
+# target to build an object file
+src/InstructionFormat/IType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.o
+.PHONY : src/InstructionFormat/IType.cpp.o
+
+src/InstructionFormat/IType.i: src/InstructionFormat/IType.cpp.i
+.PHONY : src/InstructionFormat/IType.i
+
+# target to preprocess a source file
+src/InstructionFormat/IType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.i
+.PHONY : src/InstructionFormat/IType.cpp.i
+
+src/InstructionFormat/IType.s: src/InstructionFormat/IType.cpp.s
+.PHONY : src/InstructionFormat/IType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/IType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.s
+.PHONY : src/InstructionFormat/IType.cpp.s
+
 src/InstructionFormat/JType.o: src/InstructionFormat/JType.cpp.o
 .PHONY : src/InstructionFormat/JType.o
 
@@ -598,6 +625,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/InstType_test/test_I-Type.o: tests/InstType_test/test_I-Type.cpp.o
+.PHONY : tests/InstType_test/test_I-Type.o
+
+# target to build an object file
+tests/InstType_test/test_I-Type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.o
+.PHONY : tests/InstType_test/test_I-Type.cpp.o
+
+tests/InstType_test/test_I-Type.i: tests/InstType_test/test_I-Type.cpp.i
+.PHONY : tests/InstType_test/test_I-Type.i
+
+# target to preprocess a source file
+tests/InstType_test/test_I-Type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.i
+.PHONY : tests/InstType_test/test_I-Type.cpp.i
+
+tests/InstType_test/test_I-Type.s: tests/InstType_test/test_I-Type.cpp.s
+.PHONY : tests/InstType_test/test_I-Type.s
+
+# target to generate assembly for a file
+tests/InstType_test/test_I-Type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.s
+.PHONY : tests/InstType_test/test_I-Type.cpp.s
+
 tests/InstType_test/test_R-Type.o: tests/InstType_test/test_R-Type.cpp.o
 .PHONY : tests/InstType_test/test_R-Type.o
 
@@ -878,6 +929,9 @@ help:
 	@echo "... src/DebugConfig.o"
 	@echo "... src/DebugConfig.i"
 	@echo "... src/DebugConfig.s"
+	@echo "... src/InstructionFormat/IType.o"
+	@echo "... src/InstructionFormat/IType.i"
+	@echo "... src/InstructionFormat/IType.s"
 	@echo "... src/InstructionFormat/JType.o"
 	@echo "... src/InstructionFormat/JType.i"
 	@echo "... src/InstructionFormat/JType.s"
@@ -923,6 +977,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/InstType_test/test_I-Type.o"
+	@echo "... tests/InstType_test/test_I-Type.i"
+	@echo "... tests/InstType_test/test_I-Type.s"
 	@echo "... tests/InstType_test/test_R-Type.o"
 	@echo "... tests/InstType_test/test_R-Type.i"
 	@echo "... tests/InstType_test/test_R-Type.s"

@@ -22,6 +22,6 @@ void WritebackStage::tick(RISCV &cpu)
         value = cpu.pc + 4;
         break;
     }
-
+   
     cpu.regs.write(mem_wb.rd, value);
 }

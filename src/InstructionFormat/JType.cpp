@@ -9,20 +9,7 @@ void JType::decode(uint32_t raw)
   
     rd = extractRd(raw);
     opcode = extractOpcode(raw);
-    // Manually extract J-type immediate
-    int32_t imm20 = (raw >> 31) & 0x1;
-    int32_t imm10_1 = (raw >> 21) & 0x3FF;
-    int32_t imm11 = (raw >> 20) & 0x1;
-    int32_t imm19_12 = (raw >> 12) & 0xFF;
-
-    imm = (imm20 << 20) |
-          (imm19_12 << 12) |
-          (imm11 << 11) |
-          (imm10_1 << 1);
-
-    // Sign-extend to 32 bits (if imm[20] is 1, fill upper bits with 1s)
-    if (imm20)
-        imm |= 0xFFF00000;
+    imm = extractImmediate(raw,'J');
 
     if (DEBUG.decode)
     {

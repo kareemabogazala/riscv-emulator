@@ -1,5 +1,6 @@
 #include "Stages/MemoryStage.h"
 #include "RISCV.h"
+#include <iostream>
 
 void MemoryStage::tick(RISCV &cpu)
 {
@@ -10,8 +11,8 @@ void MemoryStage::tick(RISCV &cpu)
     mem_wb.alu_result = ex_mem.alu_result;
     mem_wb.reg_write = cpu.control_logic.controlSignals.RegWEn;
     mem_wb.wb_sel = cpu.control_logic.controlSignals.WBSelCode;
-
-    // Safe: only try to read if this is actually a load
+    
+    // Handle memory access if required
     if (cpu.control_logic.controlSignals.MemRW == MEMRW::READ &&
         cpu.control_logic.controlSignals.WBSelCode == WBSel::WB_MEM)
     {
@@ -21,14 +22,16 @@ void MemoryStage::tick(RISCV &cpu)
         }
         else
         {
-            mem_wb.mem_data = 0; // or throw/log warning if you prefer
+            mem_wb.mem_data = 0;
         }
     }
-
-    // Safe: only write if it's a store
     else if (cpu.control_logic.controlSignals.MemRW == MEMRW::WRITE)
     {
         if (cpu.bus->in_range(ex_mem.alu_result))
+        {
             cpu.bus->write32(ex_mem.alu_result, ex_mem.rs2_val);
+        }
     }
+
+  
 }

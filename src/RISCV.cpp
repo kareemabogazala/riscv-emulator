@@ -33,7 +33,7 @@ void RISCV::run(uint32_t max_cycles)
 {
     for (uint32_t cycle = 0; cycle < max_cycles; ++cycle)
     {
-        std::cout << "[Cycle " << cycle << "] PC = 0x" << std::hex << pc << std::dec << "\n";
+     //   std::cout << "[Cycle " << cycle << "] PC = 0x" << std::hex << pc << std::dec << "\n";
         step();
     }
 }

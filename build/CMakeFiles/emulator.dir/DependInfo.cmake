@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Core/ALU.cpp" "CMakeFiles/emulator.dir/src/Core/ALU.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Core/ALU.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/DebugConfig.cpp" "CMakeFiles/emulator.dir/src/DebugConfig.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/DebugConfig.cpp.o.d"
+  "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/IType.cpp" "CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/JType.cpp" "CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/RTpe.cpp" "CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.o.d"
   "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/DMEM.cpp" "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o" "gcc" "CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o.d"

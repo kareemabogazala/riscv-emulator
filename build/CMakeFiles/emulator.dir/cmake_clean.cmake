@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emulator.dir/src/Core/ALU.cpp.o.d"
   "CMakeFiles/emulator.dir/src/DebugConfig.cpp.o"
   "CMakeFiles/emulator.dir/src/DebugConfig.cpp.o.d"
+  "CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o"
+  "CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o.d"
   "CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o"
   "CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o.d"
   "CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.o"
