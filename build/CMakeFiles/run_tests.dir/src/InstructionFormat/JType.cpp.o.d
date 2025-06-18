@@ -1,6 +1,6 @@
-CMakeFiles/emulator.dir/src/Utiles/DecoderUtiles.cpp.o: \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Utiles/DecoderUtiles.cpp \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/RType.h \
+CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o: \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/InstructionFormat/JType.cpp \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/JType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -805,4 +805,5 @@ CMakeFiles/emulator.dir/src/Utiles/DecoderUtiles.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h

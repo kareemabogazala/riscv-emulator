@@ -1,4 +1,5 @@
 #include "InstructionFormat/RType.h"
+#include "InstructionFormat/JType.h"
 // In future: include other types like IType, UType, etc.
 #include "Utils/DecoderUtils.h"
 
@@ -8,12 +9,8 @@ std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode)
     {
     case 0x33: // R-type opcode for arithmetic instructions
         return std::make_unique<RType>();
-
-        // Add other formats here as needed:
-        // case 0x13: return std::make_unique<IType>();
-        // case 0x37: return std::make_unique<UType>();
-        // case 0x63: return std::make_unique<BType>();
-        // ...
+    case 0x6F: // JAL opcode
+        return std::make_unique<JType>();
     default:
         throw std::runtime_error("Unknown instruction format for opcode: " + std::to_string(opcode));
     }

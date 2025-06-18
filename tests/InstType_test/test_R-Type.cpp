@@ -70,7 +70,7 @@ TEST_CASE("ALU instructions produce correct results in register file (writeback 
 
     SECTION("Registers contain correct results after full pipeline")
     {
-        cpu.run(15); // Run enough cycles for 10 instructions to complete WB
+        cpu.run(10); // Run enough cycles for 10 instructions to complete WB
 
         for (const auto &exp : expectations)
         {

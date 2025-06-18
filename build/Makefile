@@ -196,6 +196,33 @@ src/DebugConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.s
 .PHONY : src/DebugConfig.cpp.s
 
+src/InstructionFormat/JType.o: src/InstructionFormat/JType.cpp.o
+.PHONY : src/InstructionFormat/JType.o
+
+# target to build an object file
+src/InstructionFormat/JType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o
+.PHONY : src/InstructionFormat/JType.cpp.o
+
+src/InstructionFormat/JType.i: src/InstructionFormat/JType.cpp.i
+.PHONY : src/InstructionFormat/JType.i
+
+# target to preprocess a source file
+src/InstructionFormat/JType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.i
+.PHONY : src/InstructionFormat/JType.cpp.i
+
+src/InstructionFormat/JType.s: src/InstructionFormat/JType.cpp.s
+.PHONY : src/InstructionFormat/JType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/JType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.s
+.PHONY : src/InstructionFormat/JType.cpp.s
+
 src/InstructionFormat/RTpe.o: src/InstructionFormat/RTpe.cpp.o
 .PHONY : src/InstructionFormat/RTpe.o
 
@@ -520,32 +547,32 @@ src/Stages/WritebackStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.s
 .PHONY : src/Stages/WritebackStage.cpp.s
 
-src/Utiles/DecoderUtiles.o: src/Utiles/DecoderUtiles.cpp.o
-.PHONY : src/Utiles/DecoderUtiles.o
+src/Utils/DecoderUtiles.o: src/Utils/DecoderUtiles.cpp.o
+.PHONY : src/Utils/DecoderUtiles.o
 
 # target to build an object file
-src/Utiles/DecoderUtiles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utiles/DecoderUtiles.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utiles/DecoderUtiles.cpp.o
-.PHONY : src/Utiles/DecoderUtiles.cpp.o
+src/Utils/DecoderUtiles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o
+.PHONY : src/Utils/DecoderUtiles.cpp.o
 
-src/Utiles/DecoderUtiles.i: src/Utiles/DecoderUtiles.cpp.i
-.PHONY : src/Utiles/DecoderUtiles.i
+src/Utils/DecoderUtiles.i: src/Utils/DecoderUtiles.cpp.i
+.PHONY : src/Utils/DecoderUtiles.i
 
 # target to preprocess a source file
-src/Utiles/DecoderUtiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utiles/DecoderUtiles.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utiles/DecoderUtiles.cpp.i
-.PHONY : src/Utiles/DecoderUtiles.cpp.i
+src/Utils/DecoderUtiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.i
+.PHONY : src/Utils/DecoderUtiles.cpp.i
 
-src/Utiles/DecoderUtiles.s: src/Utiles/DecoderUtiles.cpp.s
-.PHONY : src/Utiles/DecoderUtiles.s
+src/Utils/DecoderUtiles.s: src/Utils/DecoderUtiles.cpp.s
+.PHONY : src/Utils/DecoderUtiles.s
 
 # target to generate assembly for a file
-src/Utiles/DecoderUtiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utiles/DecoderUtiles.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utiles/DecoderUtiles.cpp.s
-.PHONY : src/Utiles/DecoderUtiles.cpp.s
+src/Utils/DecoderUtiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.s
+.PHONY : src/Utils/DecoderUtiles.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -570,6 +597,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+tests/InstType_test/test_R-Type.o: tests/InstType_test/test_R-Type.cpp.o
+.PHONY : tests/InstType_test/test_R-Type.o
+
+# target to build an object file
+tests/InstType_test/test_R-Type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.o
+.PHONY : tests/InstType_test/test_R-Type.cpp.o
+
+tests/InstType_test/test_R-Type.i: tests/InstType_test/test_R-Type.cpp.i
+.PHONY : tests/InstType_test/test_R-Type.i
+
+# target to preprocess a source file
+tests/InstType_test/test_R-Type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.i
+.PHONY : tests/InstType_test/test_R-Type.cpp.i
+
+tests/InstType_test/test_R-Type.s: tests/InstType_test/test_R-Type.cpp.s
+.PHONY : tests/InstType_test/test_R-Type.s
+
+# target to generate assembly for a file
+tests/InstType_test/test_R-Type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.s
+.PHONY : tests/InstType_test/test_R-Type.cpp.s
 
 tests/memory_test/test_dmem.o: tests/memory_test/test_dmem.cpp.o
 .PHONY : tests/memory_test/test_dmem.o
@@ -827,6 +878,9 @@ help:
 	@echo "... src/DebugConfig.o"
 	@echo "... src/DebugConfig.i"
 	@echo "... src/DebugConfig.s"
+	@echo "... src/InstructionFormat/JType.o"
+	@echo "... src/InstructionFormat/JType.i"
+	@echo "... src/InstructionFormat/JType.s"
 	@echo "... src/InstructionFormat/RTpe.o"
 	@echo "... src/InstructionFormat/RTpe.i"
 	@echo "... src/InstructionFormat/RTpe.s"
@@ -863,12 +917,15 @@ help:
 	@echo "... src/Stages/WritebackStage.o"
 	@echo "... src/Stages/WritebackStage.i"
 	@echo "... src/Stages/WritebackStage.s"
-	@echo "... src/Utiles/DecoderUtiles.o"
-	@echo "... src/Utiles/DecoderUtiles.i"
-	@echo "... src/Utiles/DecoderUtiles.s"
+	@echo "... src/Utils/DecoderUtiles.o"
+	@echo "... src/Utils/DecoderUtiles.i"
+	@echo "... src/Utils/DecoderUtiles.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/InstType_test/test_R-Type.o"
+	@echo "... tests/InstType_test/test_R-Type.i"
+	@echo "... tests/InstType_test/test_R-Type.s"
 	@echo "... tests/memory_test/test_dmem.o"
 	@echo "... tests/memory_test/test_dmem.i"
 	@echo "... tests/memory_test/test_dmem.s"

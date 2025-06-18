@@ -1,24 +1,86 @@
 riscv-emulator/
-├── CMakeLists.txt
-├── include/
-│   ├── riscv.h              # Main emulator loop & CPU state
-│   ├── fetch.h
-│   ├── decode.h
-│   ├── execute.h
-│   ├── memory_stage.h
-│   ├── write_back.h
-│   ├── control_unit.h       # NEW: Generates control signals
-│   ├── stage.h              # NEW: Base class for stages
-│   ├── imem.h               # NEW: Instruction memory abstraction
-│   ├── dmem.h               # NEW: Data memory abstraction
-├── src/
-│   ├── main.cpp
-│   ├── riscv.cpp
-│   ├── fetch.cpp
-│   ├── decode.cpp
-│   ├── execute.cpp
-│   ├── memory_stage.cpp
-│   ├── write_back.cpp
-│   ├── control_unit.cpp     # NEW
-│   ├── imem.cpp             # NEW
-│   ├── dmem.cpp             # NEW
+├── CMakeLists.txt                # CMake build configuration
+├── AssemblyCode/                # RISC-V assembly test programs
+├── build/                       # (gitignored) Build artifacts
+├── external/                    # External dependencies (if any)
+├── include/                     # Header files
+│
+│   ├── Core/                    # Core CPU logic
+│   │   ├── ALU.h
+│   │   ├── BranchComp.h
+│
+│   ├── InstructionFormat/       # Instruction decoding logic
+│   │   ├── InstructionFormat.h
+│   │   ├── RType.h
+│
+│   ├── Memory/                  # Memory architecture
+│   │   ├── DMEM.h
+│   │   ├── IMEM.h
+│   │   ├── memory.h
+│   │   ├── MemoryBus.h
+│
+│   ├── Stages/                  # Pipeline stages
+│   │   ├── DecodeStage.h
+│   │   ├── ExecuteStage.h
+│   │   ├── FetchStage.h
+│   │   ├── MemoryStage.h
+│   │   ├── WritebackStage.h
+│   │   ├── Stage.h              # Base interface for all stages
+│
+│   ├── Utils/                   # Utility modules
+│   │   ├── ALUOp.h
+│   │   ├── DecoderUtils.h
+│
+│   ├── ControlLogic.h           # Control signal generator
+│   ├── DebugConfig.h            # Debugging flags & config
+│   ├── Regs.h                   # Register file abstraction
+│   ├── RISCV.h                  # Top-level RISCV CPU class
+│
+├── src/                         # Source files
+│
+│   ├── Core/
+│   │   ├── ALU.cpp
+│
+│   ├── InstructionFormat/
+│   │   ├── RTpe.cpp
+│
+│   ├── Memory/
+│   │   ├── DMEM.cpp
+│   │   ├── IMEM.cpp
+│   │   ├── memory.cpp
+│   │   ├── MemoryBus.cpp
+│
+│   ├── Stages/
+│   │   ├── DecodeStage.cpp
+│   │   ├── ExecuteStage.cpp
+│   │   ├── FetchStage.cpp
+│   │   ├── MemoryStage.cpp
+│   │   ├── WritebackStage.cpp
+│
+│   ├── Utils/                 
+│   │   ├── DebugConfig.cpp
+│
+│   ├── main.cpp                 # Main execution loop
+│   ├── Regs.cpp
+│   ├── RISCV.cpp
+│
+├── tests/                       # Unit and integration tests
+│
+│   ├── InstType_test/
+│   │   └── test_R-Type.cpp
+│
+│   ├── memory_test/
+│   │   ├── test_dmem.cpp
+│   │   ├── test_imem.cpp
+│   │   ├── test_memory_bus.cpp
+│   │   ├── test_memory_general.cpp
+│   │   └── test_memory_regs_mix.cpp
+│
+│   ├── regs_test/
+│   │   └── (tests here)
+│
+│   ├── stages_test/
+│   │   └── (tests here)
+│
+│   └── unitTest/                # General unit tests
+│       └── (misc tests)

@@ -33,15 +33,24 @@ void RISCV::run(uint32_t max_cycles)
 {
     for (uint32_t cycle = 0; cycle < max_cycles; ++cycle)
     {
-      //  std::cout << "[Cycle " << cycle << "] PC = 0x" << std::hex << pc << std::dec << "\n";
+        std::cout << "[Cycle " << cycle << "] PC = 0x" << std::hex << pc << std::dec << "\n";
         step();
     }
 }
 
 void RISCV::update_pc()
 {
-    // Default: PC = PC + 4 (from fetch stage output)
-    pc = if_id.pc_next;
+    if (control_logic.controlSignals.PCSel)
+    {
+        // Use jump target calculated by ALU in Execute stage
+        pc = ex_mem.alu_result;
+        control_logic.controlSignals.PCSel = false;
+    }
+    else
+    {
+        // Default sequential execution
+        pc = if_id.pc_next;
+    }
 }
 
 
