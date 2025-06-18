@@ -142,6 +142,33 @@ run_tests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 .PHONY : run_tests/fast
 
+src/Core/ALU.o: src/Core/ALU.cpp.o
+.PHONY : src/Core/ALU.o
+
+# target to build an object file
+src/Core/ALU.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.o
+.PHONY : src/Core/ALU.cpp.o
+
+src/Core/ALU.i: src/Core/ALU.cpp.i
+.PHONY : src/Core/ALU.i
+
+# target to preprocess a source file
+src/Core/ALU.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.i
+.PHONY : src/Core/ALU.cpp.i
+
+src/Core/ALU.s: src/Core/ALU.cpp.s
+.PHONY : src/Core/ALU.s
+
+# target to generate assembly for a file
+src/Core/ALU.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.s
+.PHONY : src/Core/ALU.cpp.s
+
 src/DebugConfig.o: src/DebugConfig.cpp.o
 .PHONY : src/DebugConfig.o
 
@@ -385,6 +412,33 @@ src/Stages/DecodeStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.s
 .PHONY : src/Stages/DecodeStage.cpp.s
 
+src/Stages/ExecuteStage.o: src/Stages/ExecuteStage.cpp.o
+.PHONY : src/Stages/ExecuteStage.o
+
+# target to build an object file
+src/Stages/ExecuteStage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.o
+.PHONY : src/Stages/ExecuteStage.cpp.o
+
+src/Stages/ExecuteStage.i: src/Stages/ExecuteStage.cpp.i
+.PHONY : src/Stages/ExecuteStage.i
+
+# target to preprocess a source file
+src/Stages/ExecuteStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.i
+.PHONY : src/Stages/ExecuteStage.cpp.i
+
+src/Stages/ExecuteStage.s: src/Stages/ExecuteStage.cpp.s
+.PHONY : src/Stages/ExecuteStage.s
+
+# target to generate assembly for a file
+src/Stages/ExecuteStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.s
+.PHONY : src/Stages/ExecuteStage.cpp.s
+
 src/Stages/FetchStage.o: src/Stages/FetchStage.cpp.o
 .PHONY : src/Stages/FetchStage.o
 
@@ -411,6 +465,60 @@ src/Stages/FetchStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/FetchStage.cpp.s
 .PHONY : src/Stages/FetchStage.cpp.s
+
+src/Stages/MemoryStage.o: src/Stages/MemoryStage.cpp.o
+.PHONY : src/Stages/MemoryStage.o
+
+# target to build an object file
+src/Stages/MemoryStage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.o
+.PHONY : src/Stages/MemoryStage.cpp.o
+
+src/Stages/MemoryStage.i: src/Stages/MemoryStage.cpp.i
+.PHONY : src/Stages/MemoryStage.i
+
+# target to preprocess a source file
+src/Stages/MemoryStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.i
+.PHONY : src/Stages/MemoryStage.cpp.i
+
+src/Stages/MemoryStage.s: src/Stages/MemoryStage.cpp.s
+.PHONY : src/Stages/MemoryStage.s
+
+# target to generate assembly for a file
+src/Stages/MemoryStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.s
+.PHONY : src/Stages/MemoryStage.cpp.s
+
+src/Stages/WritebackStage.o: src/Stages/WritebackStage.cpp.o
+.PHONY : src/Stages/WritebackStage.o
+
+# target to build an object file
+src/Stages/WritebackStage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.o
+.PHONY : src/Stages/WritebackStage.cpp.o
+
+src/Stages/WritebackStage.i: src/Stages/WritebackStage.cpp.i
+.PHONY : src/Stages/WritebackStage.i
+
+# target to preprocess a source file
+src/Stages/WritebackStage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.i
+.PHONY : src/Stages/WritebackStage.cpp.i
+
+src/Stages/WritebackStage.s: src/Stages/WritebackStage.cpp.s
+.PHONY : src/Stages/WritebackStage.s
+
+# target to generate assembly for a file
+src/Stages/WritebackStage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.s
+.PHONY : src/Stages/WritebackStage.cpp.s
 
 src/Utiles/DecoderUtiles.o: src/Utiles/DecoderUtiles.cpp.o
 .PHONY : src/Utiles/DecoderUtiles.o
@@ -655,6 +763,30 @@ tests/stages_test/test_fetch_decode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode.cpp.s
 .PHONY : tests/stages_test/test_fetch_decode.cpp.s
 
+tests/stages_test/test_fetch_decode_execute.o: tests/stages_test/test_fetch_decode_execute.cpp.o
+.PHONY : tests/stages_test/test_fetch_decode_execute.o
+
+# target to build an object file
+tests/stages_test/test_fetch_decode_execute.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.o
+.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.o
+
+tests/stages_test/test_fetch_decode_execute.i: tests/stages_test/test_fetch_decode_execute.cpp.i
+.PHONY : tests/stages_test/test_fetch_decode_execute.i
+
+# target to preprocess a source file
+tests/stages_test/test_fetch_decode_execute.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.i
+.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.i
+
+tests/stages_test/test_fetch_decode_execute.s: tests/stages_test/test_fetch_decode_execute.cpp.s
+.PHONY : tests/stages_test/test_fetch_decode_execute.s
+
+# target to generate assembly for a file
+tests/stages_test/test_fetch_decode_execute.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.s
+.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.s
+
 tests/test_main.o: tests/test_main.cpp.o
 .PHONY : tests/test_main.o
 
@@ -689,6 +821,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... emulator"
 	@echo "... run_tests"
+	@echo "... src/Core/ALU.o"
+	@echo "... src/Core/ALU.i"
+	@echo "... src/Core/ALU.s"
 	@echo "... src/DebugConfig.o"
 	@echo "... src/DebugConfig.i"
 	@echo "... src/DebugConfig.s"
@@ -716,9 +851,18 @@ help:
 	@echo "... src/Stages/DecodeStage.o"
 	@echo "... src/Stages/DecodeStage.i"
 	@echo "... src/Stages/DecodeStage.s"
+	@echo "... src/Stages/ExecuteStage.o"
+	@echo "... src/Stages/ExecuteStage.i"
+	@echo "... src/Stages/ExecuteStage.s"
 	@echo "... src/Stages/FetchStage.o"
 	@echo "... src/Stages/FetchStage.i"
 	@echo "... src/Stages/FetchStage.s"
+	@echo "... src/Stages/MemoryStage.o"
+	@echo "... src/Stages/MemoryStage.i"
+	@echo "... src/Stages/MemoryStage.s"
+	@echo "... src/Stages/WritebackStage.o"
+	@echo "... src/Stages/WritebackStage.i"
+	@echo "... src/Stages/WritebackStage.s"
 	@echo "... src/Utiles/DecoderUtiles.o"
 	@echo "... src/Utiles/DecoderUtiles.i"
 	@echo "... src/Utiles/DecoderUtiles.s"
@@ -749,6 +893,9 @@ help:
 	@echo "... tests/stages_test/test_fetch_decode.o"
 	@echo "... tests/stages_test/test_fetch_decode.i"
 	@echo "... tests/stages_test/test_fetch_decode.s"
+	@echo "... tests/stages_test/test_fetch_decode_execute.o"
+	@echo "... tests/stages_test/test_fetch_decode_execute.i"
+	@echo "... tests/stages_test/test_fetch_decode_execute.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

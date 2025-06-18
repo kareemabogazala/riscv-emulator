@@ -1,5 +1,5 @@
 #include "InstructionFormat/RType.h"
-#include "Utiles/DecoderUtiles.h"
+#include "Utils/DecoderUtils.h"
 #include "RISCV.h" // Required for fill()
 #include <memory>  // Required for unique_ptr
 #include "DebugConfig.h" //Required for debug
@@ -18,14 +18,16 @@ void RType::decode(uint32_t raw)
 void RType::generateControlSignals(ControlLogic &control) const
 {
     ControlSignals signals{};
-    signals.PCSel = false; // Not a jump/branch
-    signals.reg_write = true;
-    signals.mem_read = false;
-    signals.mem_write = false;
-    signals.branch = false;
-    signals.mem_to_reg = false;
-    signals.alu_src = false;
-    signals.alu_op = determineALUOp(opcode, funct3, funct7);
+    signals.PCSel = false;
+    signals.RegWEn = true;
+    signals.MemRW = MEMRW::READ;
+    signals.BrUn = false;
+    signals.Branch = false;
+    signals.ALUSel = determineALUOp(opcode, funct3, funct7);
+    signals.ASel = ALU_A::RS1;
+    signals.BSel = ALU_B::RS2;
+    signals.ImmSelCode = ImmSel::IMM_I; // Could be default/dummy for R-type
+    signals.WBSelCode = WBSel::WB_ALU;
 
     control.controlSignals = signals;
 
@@ -33,13 +35,17 @@ void RType::generateControlSignals(ControlLogic &control) const
     if (DEBUG.decode)
     {
         std::cout << "[Decode:R-Type] Control Signals:"
-                  << " reg_write=" << signals.reg_write
-                  << " mem_read=" << signals.mem_read
-                  << " mem_write=" << signals.mem_write
-                  << " branch=" << signals.branch
-                  << " mem_to_reg=" << signals.mem_to_reg
-                  << " alu_src=" << signals.alu_src
-                  << " alu_op=" << static_cast<int>(signals.alu_op)
+                  << " PCSel=" << signals.PCSel
+                  << " RegWEn=" << signals.RegWEn
+                  << " MemRW=" << (signals.MemRW == MEMRW::WRITE ? "WRITE" : "READ")
+                  << " Branch=" << signals.Branch
+                  << " BrUn=" << signals.BrUn
+                  << " ALUOp=" << static_cast<int>(signals.ALUSel)
+                  << " ASel=" << (signals.ASel == ALU_A::PC ? "PC" : "RS1")
+                  << " BSel=" << (signals.BSel == ALU_B::IMM ? "IMM" : "RS2")
+                  << " ImmSel=" << static_cast<int>(signals.ImmSelCode)
+                  << " WBSel=" << (signals.WBSelCode == WBSel::WB_ALU ? "ALU" : signals.WBSelCode == WBSel::WB_MEM ? "MEM"
+                                                                                                                   : "PC+4")
                   << std::endl;
     }
 }
@@ -72,7 +78,7 @@ void RType::fill(RISCV &cpu) const
 
         std::cout << "[Decode:R-Type] Register Values:"
                   << " rs1_val=0x" << std::hex << cpu.id_ex.rs1_val
-                  << " rs2_val=0x" << cpu.id_ex.rs2_val << std::dec
+                  << " rs2_val=0x" << std::hex << cpu.id_ex.rs2_val 
                   << std::endl;
     }
 }

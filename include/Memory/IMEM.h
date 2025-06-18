@@ -28,6 +28,8 @@ public:
 
     // Allow loading code during initialization only
     void load_code(const std::vector<uint8_t> &bytes, uint32_t offset = 0);
-};
+    void load_code32(const std::vector<uint32_t> &instrs, uint32_t offset);
+    void load_code_from_file(const std::string &path, uint32_t offset);
 
+};
 #endif // IMEM_H

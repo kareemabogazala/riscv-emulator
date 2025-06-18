@@ -802,7 +802,7 @@ CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/DecoderUtiles.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/DecoderUtils.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/ALUOp.h
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/ALUOp.h

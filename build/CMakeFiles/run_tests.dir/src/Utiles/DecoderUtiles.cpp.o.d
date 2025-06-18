@@ -34,7 +34,7 @@ CMakeFiles/run_tests.dir/src/Utiles/DecoderUtiles.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/DecoderUtiles.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/DecoderUtils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/align.h \
@@ -488,7 +488,7 @@ CMakeFiles/run_tests.dir/src/Utiles/DecoderUtiles.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/forward_like.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/ALUOp.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/ALUOp.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/RISCV.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/equal.h \

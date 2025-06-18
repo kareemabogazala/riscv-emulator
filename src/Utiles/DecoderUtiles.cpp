@@ -1,6 +1,6 @@
 #include "InstructionFormat/RType.h"
 // In future: include other types like IType, UType, etc.
-#include "Utiles/DecoderUtiles.h"
+#include "Utils/DecoderUtils.h"
 
 std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode)
 {

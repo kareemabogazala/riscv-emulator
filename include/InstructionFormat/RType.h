@@ -2,7 +2,7 @@
 #define R_TYPE_H
 
 #include "InstructionFormat/InstructionFormat.h"
-#include "Utiles/ALUOp.h"
+#include "Utils/ALUOp.h"
 class RType : public InstructionFormat
 {
 public:
@@ -13,6 +13,7 @@ public:
     void generateControlSignals(ControlLogic &control) const override;
 
     void fill(RISCV &cpu) const override;
+
 };
 
 #endif // R_TYPE_H

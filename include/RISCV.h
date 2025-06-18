@@ -8,8 +8,8 @@
 #include "Stages/Stage.h"
 #include "Regs.h"
 #include "Memory/MemoryBus.h"
-#include "Utiles/DecoderUtiles.h"
-#include "Utiles/ALUOp.h"
+#include "Utils/DecoderUtils.h"
+#include "Utils/ALUOp.h"
 #include "ControlLogic.h"
 class Stage; // 🔁 Add this forward declaration
 
@@ -42,19 +42,27 @@ public:
             uint32_t rs1_val = 0;
             uint32_t rs2_val = 0;
 
-            // All possible immediates (only one will be used)
-            int32_t imm_i = 0;
-            int32_t imm_s = 0;
-            int32_t imm_b = 0;
-            int32_t imm_u = 0;
-            int32_t imm_j = 0;
+            // immediates 
+            int32_t imm = 0;
+
+            //fot the J/ JU
+            bool is_jump = false;
     } id_ex;
 
     struct EXMEM
-    { /* ALU results, branch info */
+    {
+        uint32_t alu_result = 0;
+        uint32_t rs2_val = 0; // For store instructions
+        uint8_t rd = 0;
+
     } ex_mem;
     struct MEMWB
-    { /* data to write back */
+    {
+        uint32_t alu_result = 0;
+        uint32_t mem_data = 0;
+        uint8_t rd = 0;
+        bool reg_write = false;
+        WBSel wb_sel = WBSel::WB_ALU;
     } mem_wb;
 
     // Ordered pipeline stages
@@ -70,6 +78,10 @@ public:
 
     /// Run the CPU for up to max_cycles
     void run(uint32_t max_cycles = 1000000);
+
+    // Debugging
+    /// Dump IDEX contents for debugging
+    void dumpIDEX() const;
 };
 
 #endif // RISCV_H

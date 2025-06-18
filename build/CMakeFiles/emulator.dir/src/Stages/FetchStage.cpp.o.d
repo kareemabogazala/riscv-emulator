@@ -802,8 +802,8 @@ CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/DecoderUtiles.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/DecoderUtils.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utiles/ALUOp.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/ALUOp.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h

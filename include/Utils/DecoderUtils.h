@@ -3,7 +3,7 @@
 #include <memory> // at the top
 
 #include "InstructionFormat/InstructionFormat.h"
-#include "Utiles/ALUOp.h"
+#include "Utils/ALUOp.h"
 class InstructionFormat; // forward declaration
 std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode);
 
