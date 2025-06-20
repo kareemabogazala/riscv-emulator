@@ -9,6 +9,7 @@ struct DebugConfig
     bool RISCV_IDEX = false;
     bool ALU = false;
     bool execute = false;
+    bool dump_dmem_every_cycle = false;
 };
 
 // Global debug config instance

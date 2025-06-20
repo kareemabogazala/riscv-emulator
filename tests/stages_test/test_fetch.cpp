@@ -20,9 +20,9 @@ TEST_CASE("FetchStage: fetches correct instruction and updates pc_next", "[fetch
 
     SECTION("First cycle fetches first instruction")
     {
-      //  REQUIRE_THROWS_AS(cpu.step(),std::runtime_error) ;
-      //  REQUIRE(cpu.if_id.instr == 0x00000013);
-      //  REQUIRE(cpu.if_id.pc_next == 0x00000004);
+       // REQUIRE_THROWS_AS(cpu.step(),std::runtime_error) ;
+       // REQUIRE(cpu.if_id.instr == 0x00000013);
+       // REQUIRE(cpu.if_id.pc_next == 0x00000004);
     }
 
 }

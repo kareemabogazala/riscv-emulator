@@ -26,35 +26,56 @@ void RISCV::step()
     }
     if(DEBUG.RISCV_IDEX) dumpIDEX();
     // Update PC at the end of the cycle
+    control_logic.controlSignals.Branch = false;
     update_pc();
 }
-
-void RISCV::run(uint32_t max_cycles)
+uint32_t default_transform2(uint32_t val) { return val; }
+int RISCV::run(int max_cycles)
 {
-    for (uint32_t cycle = 0; cycle < max_cycles; ++cycle)
+    int cycle;
+    
+    for (cycle = 1; cycle <= max_cycles; ++cycle)
     {
-     //   std::cout << "[Cycle " << cycle << "] PC = 0x" << std::hex << pc << std::dec << "\n";
-        step();
+       // std::cout << "[Cycle " << static_cast<int>(cycle) << "] PC = 0x" << std::hex << pc << std::dec << "\n";
+       resetPipelineRegisters();
+       step();
+       if (DEBUG.dump_dmem_every_cycle)
+       {
+           bus->dmem.dump(0x00100000, 0x00100010, default_transform2);
+       }
+       if (pc >= end_address) break;
     }
+    return cycle;
 }
 
 void RISCV::update_pc()
 {
+
     if (control_logic.controlSignals.PCSel)
     {
         // Use jump target calculated by ALU in Execute stage
         pc = ex_mem.alu_result;
         control_logic.controlSignals.PCSel = false;
+        control_logic.controlSignals.Branch = false;
     }
     else
     {
         // Default sequential execution
         pc = if_id.pc_next;
     }
+   
+    if (pc % 4 != 0)
+        throw std::runtime_error("Unaligned PC detected: " + std::to_string(pc));
 }
 
-
-
+void RISCV::resetPipelineRegisters()
+{
+    // You can just reassign default-constructed structs
+    if_id = {};
+    id_ex = {};
+    ex_mem = {};
+    mem_wb = {};
+}
 
 void RISCV::dumpIDEX() const{
     {
@@ -69,4 +90,11 @@ void RISCV::dumpIDEX() const{
                   << " rs2_val: 0x" << id_ex.rs2_val << std::dec << "\n";
         std::cout << "  imm: " << id_ex.imm<< "\n";
     }
+}
+
+void RISCV::load_program(const std::string &path, uint32_t load_address = 0x0)
+{
+    bus->imem.load_code_from_file(path, load_address);
+    pc = load_address;
+    end_address = load_address + bus->imem.end_address; // Or just path size if you track it
 }

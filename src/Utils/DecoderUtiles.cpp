@@ -1,6 +1,10 @@
 #include "InstructionFormat/RType.h"
 #include "InstructionFormat/JType.h"
 #include "InstructionFormat/IType.h"
+#include "InstructionFormat/LType.h"
+#include "InstructionFormat/SType.h"
+#include "InstructionFormat/BType.h"
+#include "InstructionFormat/UType.h"
 // In future: include other types like IType, UType, etc.
 #include "Utils/DecoderUtils.h"
 
@@ -14,6 +18,16 @@ std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode)
         return std::make_unique<JType>();
     case 0x13: // I-type ALU instructions (addi, andi, ori, etc.)
         return std::make_unique<IType>();
+    case 0x03: // Load instructions
+        return std::make_unique<LType>();
+    case 0x23:
+        return std::make_unique<SType>();
+    case 0x63:
+        return std::make_unique<BType>();
+    case 0x37:
+        return std::make_unique<UType>();
+    case 0x17:
+        return std::make_unique<UType>();
     default:
         throw std::runtime_error("Unknown instruction format for opcode: " + std::to_string(opcode));
     }
@@ -66,11 +80,17 @@ int32_t extractImmediate(uint32_t instr, char format)
         return ((instr >> 7) & 0x1F) | (((int32_t)instr >> 25) << 5);
     case 'B':
     { // B-type
-        int32_t imm = (((instr >> 8) & 0x0F) << 1) |
-                      (((instr >> 25) & 0x3F) << 5) |
-                      (((instr >> 7) & 0x01) << 11) |
-                      (((int32_t)instr >> 31) << 12);
-        return imm;
+        uint32_t imm = 0;
+        imm |= ((instr >> 8) & 0x0F) << 1;   // bits [4:1]
+        imm |= ((instr >> 25) & 0x3F) << 5;  // bits [10:5]
+        imm |= ((instr >> 7) & 0x01) << 11;  // bit 11
+        imm |= ((instr >> 31) & 0x01) << 12; // bit 12
+
+        // sign-extend 13-bit to 32-bit
+        if (imm & (1 << 12))   // if sign bit is set
+            imm |= 0xFFFFE000; // fill upper bits with 1s
+
+        return static_cast<int32_t>(imm);
     }
     case 'U': // U-type
         return instr & 0xFFFFF000;

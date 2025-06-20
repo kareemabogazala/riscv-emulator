@@ -21,6 +21,7 @@ public:
     Regs regs;                      // Register file
     std::shared_ptr<MemoryBus> bus; // Unified memory interface
     uint32_t pc = 0;                // Program counter
+    uint32_t end_address;
     ControlLogic control_logic;
     // Pipeline registers
     struct IFID
@@ -47,6 +48,9 @@ public:
 
             //fot the J/ JU
             bool is_jump = false;
+
+            // conditional branches
+            bool is_branch = false;
     } id_ex;
 
     struct EXMEM
@@ -73,15 +77,23 @@ public:
 
     //Update the next PC
     void update_pc();
+    //load file
+    void load_program(const std::string &path, uint32_t load_address);
+
     /// Advance the pipeline by one cycle
     void step();
 
     /// Run the CPU for up to max_cycles
-    void run(uint32_t max_cycles = 1000000);
+    int run(int max_cycles = 1000000);
+
+    // restart pipeline
+    /// Clear all pipeline registers (used after each cycle to avoid stale data)
+    void resetPipelineRegisters();
 
     // Debugging
     /// Dump IDEX contents for debugging
     void dumpIDEX() const;
+   
 };
 
 #endif // RISCV_H

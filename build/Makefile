@@ -169,6 +169,33 @@ src/Core/ALU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.s
 .PHONY : src/Core/ALU.cpp.s
 
+src/Core/BranchComp.o: src/Core/BranchComp.cpp.o
+.PHONY : src/Core/BranchComp.o
+
+# target to build an object file
+src/Core/BranchComp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.o
+.PHONY : src/Core/BranchComp.cpp.o
+
+src/Core/BranchComp.i: src/Core/BranchComp.cpp.i
+.PHONY : src/Core/BranchComp.i
+
+# target to preprocess a source file
+src/Core/BranchComp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.i
+.PHONY : src/Core/BranchComp.cpp.i
+
+src/Core/BranchComp.s: src/Core/BranchComp.cpp.s
+.PHONY : src/Core/BranchComp.s
+
+# target to generate assembly for a file
+src/Core/BranchComp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.s
+.PHONY : src/Core/BranchComp.cpp.s
+
 src/DebugConfig.o: src/DebugConfig.cpp.o
 .PHONY : src/DebugConfig.o
 
@@ -195,6 +222,33 @@ src/DebugConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/DebugConfig.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.s
 .PHONY : src/DebugConfig.cpp.s
+
+src/InstructionFormat/BType.o: src/InstructionFormat/BType.cpp.o
+.PHONY : src/InstructionFormat/BType.o
+
+# target to build an object file
+src/InstructionFormat/BType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.o
+.PHONY : src/InstructionFormat/BType.cpp.o
+
+src/InstructionFormat/BType.i: src/InstructionFormat/BType.cpp.i
+.PHONY : src/InstructionFormat/BType.i
+
+# target to preprocess a source file
+src/InstructionFormat/BType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.i
+.PHONY : src/InstructionFormat/BType.cpp.i
+
+src/InstructionFormat/BType.s: src/InstructionFormat/BType.cpp.s
+.PHONY : src/InstructionFormat/BType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/BType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.s
+.PHONY : src/InstructionFormat/BType.cpp.s
 
 src/InstructionFormat/IType.o: src/InstructionFormat/IType.cpp.o
 .PHONY : src/InstructionFormat/IType.o
@@ -250,6 +304,33 @@ src/InstructionFormat/JType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.s
 .PHONY : src/InstructionFormat/JType.cpp.s
 
+src/InstructionFormat/LType.o: src/InstructionFormat/LType.cpp.o
+.PHONY : src/InstructionFormat/LType.o
+
+# target to build an object file
+src/InstructionFormat/LType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.o
+.PHONY : src/InstructionFormat/LType.cpp.o
+
+src/InstructionFormat/LType.i: src/InstructionFormat/LType.cpp.i
+.PHONY : src/InstructionFormat/LType.i
+
+# target to preprocess a source file
+src/InstructionFormat/LType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.i
+.PHONY : src/InstructionFormat/LType.cpp.i
+
+src/InstructionFormat/LType.s: src/InstructionFormat/LType.cpp.s
+.PHONY : src/InstructionFormat/LType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/LType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.s
+.PHONY : src/InstructionFormat/LType.cpp.s
+
 src/InstructionFormat/RTpe.o: src/InstructionFormat/RTpe.cpp.o
 .PHONY : src/InstructionFormat/RTpe.o
 
@@ -276,6 +357,60 @@ src/InstructionFormat/RTpe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.s
 .PHONY : src/InstructionFormat/RTpe.cpp.s
+
+src/InstructionFormat/SType.o: src/InstructionFormat/SType.cpp.o
+.PHONY : src/InstructionFormat/SType.o
+
+# target to build an object file
+src/InstructionFormat/SType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.o
+.PHONY : src/InstructionFormat/SType.cpp.o
+
+src/InstructionFormat/SType.i: src/InstructionFormat/SType.cpp.i
+.PHONY : src/InstructionFormat/SType.i
+
+# target to preprocess a source file
+src/InstructionFormat/SType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.i
+.PHONY : src/InstructionFormat/SType.cpp.i
+
+src/InstructionFormat/SType.s: src/InstructionFormat/SType.cpp.s
+.PHONY : src/InstructionFormat/SType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/SType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.s
+.PHONY : src/InstructionFormat/SType.cpp.s
+
+src/InstructionFormat/UType.o: src/InstructionFormat/UType.cpp.o
+.PHONY : src/InstructionFormat/UType.o
+
+# target to build an object file
+src/InstructionFormat/UType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.o
+.PHONY : src/InstructionFormat/UType.cpp.o
+
+src/InstructionFormat/UType.i: src/InstructionFormat/UType.cpp.i
+.PHONY : src/InstructionFormat/UType.i
+
+# target to preprocess a source file
+src/InstructionFormat/UType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.i
+.PHONY : src/InstructionFormat/UType.cpp.i
+
+src/InstructionFormat/UType.s: src/InstructionFormat/UType.cpp.s
+.PHONY : src/InstructionFormat/UType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/UType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.s
+.PHONY : src/InstructionFormat/UType.cpp.s
 
 src/Memory/DMEM.o: src/Memory/DMEM.cpp.o
 .PHONY : src/Memory/DMEM.o
@@ -625,6 +760,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/InstType_test/test_B-Type.o: tests/InstType_test/test_B-Type.cpp.o
+.PHONY : tests/InstType_test/test_B-Type.o
+
+# target to build an object file
+tests/InstType_test/test_B-Type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.o
+.PHONY : tests/InstType_test/test_B-Type.cpp.o
+
+tests/InstType_test/test_B-Type.i: tests/InstType_test/test_B-Type.cpp.i
+.PHONY : tests/InstType_test/test_B-Type.i
+
+# target to preprocess a source file
+tests/InstType_test/test_B-Type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.i
+.PHONY : tests/InstType_test/test_B-Type.cpp.i
+
+tests/InstType_test/test_B-Type.s: tests/InstType_test/test_B-Type.cpp.s
+.PHONY : tests/InstType_test/test_B-Type.s
+
+# target to generate assembly for a file
+tests/InstType_test/test_B-Type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.s
+.PHONY : tests/InstType_test/test_B-Type.cpp.s
+
 tests/InstType_test/test_I-Type.o: tests/InstType_test/test_I-Type.cpp.o
 .PHONY : tests/InstType_test/test_I-Type.o
 
@@ -672,6 +831,54 @@ tests/InstType_test/test_R-Type.s: tests/InstType_test/test_R-Type.cpp.s
 tests/InstType_test/test_R-Type.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.s
 .PHONY : tests/InstType_test/test_R-Type.cpp.s
+
+tests/InstType_test/test_SL-Type.o: tests/InstType_test/test_SL-Type.cpp.o
+.PHONY : tests/InstType_test/test_SL-Type.o
+
+# target to build an object file
+tests/InstType_test/test_SL-Type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.o
+.PHONY : tests/InstType_test/test_SL-Type.cpp.o
+
+tests/InstType_test/test_SL-Type.i: tests/InstType_test/test_SL-Type.cpp.i
+.PHONY : tests/InstType_test/test_SL-Type.i
+
+# target to preprocess a source file
+tests/InstType_test/test_SL-Type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.i
+.PHONY : tests/InstType_test/test_SL-Type.cpp.i
+
+tests/InstType_test/test_SL-Type.s: tests/InstType_test/test_SL-Type.cpp.s
+.PHONY : tests/InstType_test/test_SL-Type.s
+
+# target to generate assembly for a file
+tests/InstType_test/test_SL-Type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.s
+.PHONY : tests/InstType_test/test_SL-Type.cpp.s
+
+tests/InstType_test/test_U-Type.o: tests/InstType_test/test_U-Type.cpp.o
+.PHONY : tests/InstType_test/test_U-Type.o
+
+# target to build an object file
+tests/InstType_test/test_U-Type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.o
+.PHONY : tests/InstType_test/test_U-Type.cpp.o
+
+tests/InstType_test/test_U-Type.i: tests/InstType_test/test_U-Type.cpp.i
+.PHONY : tests/InstType_test/test_U-Type.i
+
+# target to preprocess a source file
+tests/InstType_test/test_U-Type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.i
+.PHONY : tests/InstType_test/test_U-Type.cpp.i
+
+tests/InstType_test/test_U-Type.s: tests/InstType_test/test_U-Type.cpp.s
+.PHONY : tests/InstType_test/test_U-Type.s
+
+# target to generate assembly for a file
+tests/InstType_test/test_U-Type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.s
+.PHONY : tests/InstType_test/test_U-Type.cpp.s
 
 tests/memory_test/test_dmem.o: tests/memory_test/test_dmem.cpp.o
 .PHONY : tests/memory_test/test_dmem.o
@@ -913,6 +1120,30 @@ tests/test_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_main.cpp.s
 .PHONY : tests/test_main.cpp.s
 
+tests/unitTest/test_sum_array.o: tests/unitTest/test_sum_array.cpp.o
+.PHONY : tests/unitTest/test_sum_array.o
+
+# target to build an object file
+tests/unitTest/test_sum_array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.o
+.PHONY : tests/unitTest/test_sum_array.cpp.o
+
+tests/unitTest/test_sum_array.i: tests/unitTest/test_sum_array.cpp.i
+.PHONY : tests/unitTest/test_sum_array.i
+
+# target to preprocess a source file
+tests/unitTest/test_sum_array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.i
+.PHONY : tests/unitTest/test_sum_array.cpp.i
+
+tests/unitTest/test_sum_array.s: tests/unitTest/test_sum_array.cpp.s
+.PHONY : tests/unitTest/test_sum_array.s
+
+# target to generate assembly for a file
+tests/unitTest/test_sum_array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.s
+.PHONY : tests/unitTest/test_sum_array.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -926,18 +1157,33 @@ help:
 	@echo "... src/Core/ALU.o"
 	@echo "... src/Core/ALU.i"
 	@echo "... src/Core/ALU.s"
+	@echo "... src/Core/BranchComp.o"
+	@echo "... src/Core/BranchComp.i"
+	@echo "... src/Core/BranchComp.s"
 	@echo "... src/DebugConfig.o"
 	@echo "... src/DebugConfig.i"
 	@echo "... src/DebugConfig.s"
+	@echo "... src/InstructionFormat/BType.o"
+	@echo "... src/InstructionFormat/BType.i"
+	@echo "... src/InstructionFormat/BType.s"
 	@echo "... src/InstructionFormat/IType.o"
 	@echo "... src/InstructionFormat/IType.i"
 	@echo "... src/InstructionFormat/IType.s"
 	@echo "... src/InstructionFormat/JType.o"
 	@echo "... src/InstructionFormat/JType.i"
 	@echo "... src/InstructionFormat/JType.s"
+	@echo "... src/InstructionFormat/LType.o"
+	@echo "... src/InstructionFormat/LType.i"
+	@echo "... src/InstructionFormat/LType.s"
 	@echo "... src/InstructionFormat/RTpe.o"
 	@echo "... src/InstructionFormat/RTpe.i"
 	@echo "... src/InstructionFormat/RTpe.s"
+	@echo "... src/InstructionFormat/SType.o"
+	@echo "... src/InstructionFormat/SType.i"
+	@echo "... src/InstructionFormat/SType.s"
+	@echo "... src/InstructionFormat/UType.o"
+	@echo "... src/InstructionFormat/UType.i"
+	@echo "... src/InstructionFormat/UType.s"
 	@echo "... src/Memory/DMEM.o"
 	@echo "... src/Memory/DMEM.i"
 	@echo "... src/Memory/DMEM.s"
@@ -977,12 +1223,21 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/InstType_test/test_B-Type.o"
+	@echo "... tests/InstType_test/test_B-Type.i"
+	@echo "... tests/InstType_test/test_B-Type.s"
 	@echo "... tests/InstType_test/test_I-Type.o"
 	@echo "... tests/InstType_test/test_I-Type.i"
 	@echo "... tests/InstType_test/test_I-Type.s"
 	@echo "... tests/InstType_test/test_R-Type.o"
 	@echo "... tests/InstType_test/test_R-Type.i"
 	@echo "... tests/InstType_test/test_R-Type.s"
+	@echo "... tests/InstType_test/test_SL-Type.o"
+	@echo "... tests/InstType_test/test_SL-Type.i"
+	@echo "... tests/InstType_test/test_SL-Type.s"
+	@echo "... tests/InstType_test/test_U-Type.o"
+	@echo "... tests/InstType_test/test_U-Type.i"
+	@echo "... tests/InstType_test/test_U-Type.s"
 	@echo "... tests/memory_test/test_dmem.o"
 	@echo "... tests/memory_test/test_dmem.i"
 	@echo "... tests/memory_test/test_dmem.s"
@@ -1013,6 +1268,9 @@ help:
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"
+	@echo "... tests/unitTest/test_sum_array.o"
+	@echo "... tests/unitTest/test_sum_array.i"
+	@echo "... tests/unitTest/test_sum_array.s"
 .PHONY : help
 
 

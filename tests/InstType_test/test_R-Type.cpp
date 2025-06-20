@@ -16,13 +16,6 @@ TEST_CASE("ALU instructions produce correct results in register file (writeback 
     auto bus = std::make_shared<MemoryBus>(dmem, imem);
     RISCV cpu(bus);
 
-    // Add full pipeline
-    cpu.stages.push_back(std::make_unique<FetchStage>());
-    cpu.stages.push_back(std::make_unique<DecodeStage>());
-    cpu.stages.push_back(std::make_unique<ExecuteStage>());
-    cpu.stages.push_back(std::make_unique<MemoryStage>());
-    cpu.stages.push_back(std::make_unique<WritebackStage>());
-
     // Set inputs for all 10 instructions
     cpu.regs.write(2, 10);                          // x2
     cpu.regs.write(3, 32);                          // x3
@@ -46,7 +39,7 @@ TEST_CASE("ALU instructions produce correct results in register file (writeback 
     cpu.regs.write(30, 0x0F0F);                     // x30
 
     // Load 10-instruction R-type test program
-    imem.load_code_from_file("../AssemblyCode/add.bin", 0);
+    cpu.load_program("../AssemblyCode/add.bin", 0);
 
     // Expected writeback values
     struct Expected
@@ -106,7 +99,7 @@ TEST_CASE("Chain of R-type adds updates registers at 3 and 9 instructions", "[rt
     cpu.regs.write(2, 5); // every add is k*x2; here k=2..10
 
     // 3) load our 9-instruction chain
-    imem.load_code_from_file("../AssemblyCode/chain.bin", 0);
+   cpu.load_program("../AssemblyCode/chain.bin", 0);
 
     // Expected after 3 instructions (x3,x4,x5)
     std::array<uint32_t, 32> exp_after3 = {};

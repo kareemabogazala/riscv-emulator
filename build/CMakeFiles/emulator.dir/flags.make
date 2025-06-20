@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include -I/Users/kareemabogazala/Desktop/Projects/riscv-emulator/external
 
-CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
+CXX_FLAGSarm64 = -g -std=gnu++17 -arch arm64
 
-CXX_FLAGS = -std=gnu++17 -arch arm64
+CXX_FLAGS = -g -std=gnu++17 -arch arm64
 

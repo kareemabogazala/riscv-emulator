@@ -21,10 +21,19 @@ void IMem::load_code32(const std::vector<uint32_t> &instrs, uint32_t offset)
 }
 void IMem::load_code_from_file(const std::string &path, uint32_t offset = 0)
 {
-    std::ifstream file(path, std::ios::binary);
+    std::ifstream file(path, std::ios::binary | std::ios::ate);
     if (!file)
         throw std::runtime_error("Cannot open binary file: " + path);
 
-    std::vector<uint8_t> buffer(std::istreambuf_iterator<char>(file), {});
+    std::streamsize size_in_bytes = file.tellg();
+    file.seekg(0, std::ios::beg);
+
+    std::vector<uint8_t> buffer(size_in_bytes);
+    if (!file.read(reinterpret_cast<char *>(buffer.data()), size_in_bytes))
+        throw std::runtime_error("Failed to read binary content");
+
     load_code(buffer, offset);
+
+    // Set end_address
+    end_address = base_addr + offset + static_cast<uint32_t>(size_in_bytes);
 }

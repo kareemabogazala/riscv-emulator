@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Emulator",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/emulator",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "preLaunchTask": "build-emulator",
+            "environment": [],
+            "externalConsole": false
+        }
+    ]
+}

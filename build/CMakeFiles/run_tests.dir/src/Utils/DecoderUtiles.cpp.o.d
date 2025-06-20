@@ -807,4 +807,8 @@ CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/JType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/IType.h
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/IType.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/LType.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/SType.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/BType.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/UType.h

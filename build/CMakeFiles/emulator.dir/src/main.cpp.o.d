@@ -805,5 +805,4 @@ CMakeFiles/emulator.dir/src/main.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Utils/ALUOp.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Stages/FetchStage.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h

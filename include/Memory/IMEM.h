@@ -6,6 +6,7 @@
 class IMem : public Memory
 {
 public:
+    uint32_t end_address = 0;
     // Read + Execute, no write
     IMem(uint32_t base, uint32_t size)
         : Memory(base, size, MEM_R | MEM_X) {}

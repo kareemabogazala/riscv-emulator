@@ -16,5 +16,6 @@ enum class ALUOp
     SLTU,
     COPY_A,
     COPY_B,
+    LUI,
     NONE
 };

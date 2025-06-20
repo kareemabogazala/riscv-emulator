@@ -21,3 +21,4 @@ _start:
     or  x25, x26, x27     # funct3 = 0x6
     # AND rd, rs1, rs2
     and x28, x29, x30     # funct3 = 0x7
+

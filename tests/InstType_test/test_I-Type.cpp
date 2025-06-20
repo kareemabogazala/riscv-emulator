@@ -17,7 +17,7 @@ TEST_CASE("All I-Type instructions are decoded and executed correctly", "[itype]
     RISCV cpu(bus);
 
 
-    imem.load_code_from_file("../AssemblyCode/i_type_test.bin", 0);
+   cpu.load_program("../AssemblyCode/i_type_test.bin", 0);
 
     SECTION("Registers contain correct results after I-type test program")
     {
