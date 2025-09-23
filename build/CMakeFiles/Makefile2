@@ -88,12 +88,12 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/emulator.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target emulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target emulator"
 .PHONY : CMakeFiles/emulator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/emulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/emulator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 0
 .PHONY : CMakeFiles/emulator.dir/rule
@@ -105,7 +105,7 @@ emulator: CMakeFiles/emulator.dir/rule
 # codegen rule for target.
 CMakeFiles/emulator.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Finished codegen for target emulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Finished codegen for target emulator"
 .PHONY : CMakeFiles/emulator.dir/codegen
 
 # clean rule for target.
@@ -120,12 +120,12 @@ CMakeFiles/emulator.dir/clean:
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 42
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -137,7 +137,7 @@ run_tests: CMakeFiles/run_tests.dir/rule
 # codegen rule for target.
 CMakeFiles/run_tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63 "Finished codegen for target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kareemabogazala/Desktop/Projects/riscv-emulator/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69 "Finished codegen for target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/codegen
 
 # clean rule for target.
