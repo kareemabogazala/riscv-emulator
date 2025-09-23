@@ -5,7 +5,7 @@
 #include "InstructionFormat/InstructionFormat.h"
 #include "Utils/ALUOp.h"
 class InstructionFormat; // forward declaration
-std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode);
+std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode, uint8_t funct3);
 
 uint8_t extractOpcode(uint32_t instr);
 uint8_t extractRd(uint32_t instr);

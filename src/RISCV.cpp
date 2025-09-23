@@ -43,13 +43,22 @@ int RISCV::run(int max_cycles)
        {
            bus->dmem.dump(0x00100000, 0x00100010, default_transform2);
        }
-       if (pc >= end_address) break;
+      // if (pc >= end_address) break;
     }
     return cycle;
 }
 
 void RISCV::update_pc()
 {
+    // Handle trap redirection first
+    if (trap_taken)
+    {
+        pc = trap_target;
+        trap_taken = false; // Clear the trap flag after redirecting
+        control_logic.controlSignals.PCSel = false; // Clear PCSel to avoid interference
+        control_logic.controlSignals.Branch = false; // Clear Branch to avoid interference
+        return;
+    }
 
     if (control_logic.controlSignals.PCSel)
     {

@@ -1,4 +1,4 @@
-#include "Regs.h"
+#include "REGS/Regs.h"
 using namespace std;
 static const char *reg_names[32] = {
     "zero", "ra", "sp", "gp", "tp", "t0", "t1", "t2",

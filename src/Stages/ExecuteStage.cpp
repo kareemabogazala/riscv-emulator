@@ -19,6 +19,24 @@ void ExecuteStage::tick(RISCV & cpu)
                       << " rs2_val =" << rs2_val
                       << std::endl;
         }
+        // Check for SYSTEM instruction
+        if (is_system_instruction(cpu))
+        {
+            handle_system_instruction(cpu);
+            return;
+        }
+
+        // 2. Check for CSR instructions
+        if (id_ex.is_csr)
+        {
+            uint32_t old_val = cpu.csr.exec_csr(id_ex.csr_addr, rs1_val, id_ex.funct3);
+
+            // CSR instructions write old CSR value into rd (unless rd == x0)
+            cpu.ex_mem.alu_result = old_val;
+            ex_mem.rd = id_ex.rd;
+            return;
+        }
+        // 3. Regular ALU operations
         uint32_t alu_val0 = (ctrl.ASel == ALU_A::RS1) ? rs1_val : cpu.pc;
         uint32_t alu_val1 = (ctrl.BSel == ALU_B::RS2) ? rs2_val : id_ex.imm;
 
@@ -44,6 +62,53 @@ void ExecuteStage::tick(RISCV & cpu)
             dump_EXMEM(cpu);
         }
 }
+
+bool ExecuteStage::is_system_instruction(RISCV & cpu)
+{
+    if(cpu.id_ex.is_system)
+    {
+        if(DEBUG.execute)
+        {
+            std::cout << "[Execute Stage] Detected SYSTEM instruction with funct3 = 0x"
+                      << std::hex << static_cast<int>(cpu.id_ex.system.funct3)
+                      << " imm12 = 0x" << std::hex << cpu.id_ex.system.imm12
+                      << std::dec << std::endl;
+        }
+        return true;
+    }
+    return false;
+}
+
+void ExecuteStage::handle_system_instruction(RISCV & cpu)
+{
+    // Handle the system instruction based on funct3
+    const auto &sys = cpu.id_ex.system;
+    switch(sys.funct3)
+    {
+        case 0b000: { // ECALL / EBREAK / MRET group
+            if (sys.imm12 == 0x000) {
+                // ECALL
+                cpu.csr.trap_on_ecall(sys.pc_of_instr); // Next instruction after ECALL
+                cpu.trap_taken  = true;
+                cpu.trap_target = cpu.csr.read(CSRAddr::MTVEC);
+            }
+            else if (sys.imm12 == 0x302) {
+                // MRET
+                uint32_t target = cpu.csr.do_mret(); // Return to instruction after MRET
+                cpu.trap_taken  = true;
+                cpu.trap_target = target;
+            }
+            else {
+                throw std::runtime_error("Unsupported SYSTEM imm12 value");
+            }
+            break;
+        }
+        default:
+            // Later: CSRRS / CSRRW / CSRRC, etc.
+            throw std::runtime_error("SYSTEM instruction not yet implemented");
+    }
+}
+
 void ExecuteStage::dump_EXMEM(RISCV &cpu) const
 {
     const auto &ex_mem = cpu.ex_mem;
