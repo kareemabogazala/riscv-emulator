@@ -54,6 +54,8 @@ struct ControlSignals {
     ALU_B BSel;
     ImmSel ImmSelCode;
     WBSel WBSelCode;
+    
+    bool CSR;
 };
 /// Combinational control unit: maps opcode (and funct fields) to control signals.
 class ControlLogic

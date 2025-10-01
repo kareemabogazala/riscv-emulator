@@ -250,6 +250,33 @@ src/InstructionFormat/BType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.s
 .PHONY : src/InstructionFormat/BType.cpp.s
 
+src/InstructionFormat/CSRType.o: src/InstructionFormat/CSRType.cpp.o
+.PHONY : src/InstructionFormat/CSRType.o
+
+# target to build an object file
+src/InstructionFormat/CSRType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.o
+.PHONY : src/InstructionFormat/CSRType.cpp.o
+
+src/InstructionFormat/CSRType.i: src/InstructionFormat/CSRType.cpp.i
+.PHONY : src/InstructionFormat/CSRType.i
+
+# target to preprocess a source file
+src/InstructionFormat/CSRType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.i
+.PHONY : src/InstructionFormat/CSRType.cpp.i
+
+src/InstructionFormat/CSRType.s: src/InstructionFormat/CSRType.cpp.s
+.PHONY : src/InstructionFormat/CSRType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/CSRType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.s
+.PHONY : src/InstructionFormat/CSRType.cpp.s
+
 src/InstructionFormat/IType.o: src/InstructionFormat/IType.cpp.o
 .PHONY : src/InstructionFormat/IType.o
 
@@ -384,6 +411,33 @@ src/InstructionFormat/SType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.s
 .PHONY : src/InstructionFormat/SType.cpp.s
+
+src/InstructionFormat/SystemType.o: src/InstructionFormat/SystemType.cpp.o
+.PHONY : src/InstructionFormat/SystemType.o
+
+# target to build an object file
+src/InstructionFormat/SystemType.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.o
+.PHONY : src/InstructionFormat/SystemType.cpp.o
+
+src/InstructionFormat/SystemType.i: src/InstructionFormat/SystemType.cpp.i
+.PHONY : src/InstructionFormat/SystemType.i
+
+# target to preprocess a source file
+src/InstructionFormat/SystemType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.i
+.PHONY : src/InstructionFormat/SystemType.cpp.i
+
+src/InstructionFormat/SystemType.s: src/InstructionFormat/SystemType.cpp.s
+.PHONY : src/InstructionFormat/SystemType.s
+
+# target to generate assembly for a file
+src/InstructionFormat/SystemType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.s
+.PHONY : src/InstructionFormat/SystemType.cpp.s
 
 src/InstructionFormat/UType.o: src/InstructionFormat/UType.cpp.o
 .PHONY : src/InstructionFormat/UType.o
@@ -520,6 +574,60 @@ src/Memory/memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/memory.cpp.s
 .PHONY : src/Memory/memory.cpp.s
 
+src/REGS/CSR.o: src/REGS/CSR.cpp.o
+.PHONY : src/REGS/CSR.o
+
+# target to build an object file
+src/REGS/CSR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.o
+.PHONY : src/REGS/CSR.cpp.o
+
+src/REGS/CSR.i: src/REGS/CSR.cpp.i
+.PHONY : src/REGS/CSR.i
+
+# target to preprocess a source file
+src/REGS/CSR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.i
+.PHONY : src/REGS/CSR.cpp.i
+
+src/REGS/CSR.s: src/REGS/CSR.cpp.s
+.PHONY : src/REGS/CSR.s
+
+# target to generate assembly for a file
+src/REGS/CSR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.s
+.PHONY : src/REGS/CSR.cpp.s
+
+src/REGS/Regs.o: src/REGS/Regs.cpp.o
+.PHONY : src/REGS/Regs.o
+
+# target to build an object file
+src/REGS/Regs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.o
+.PHONY : src/REGS/Regs.cpp.o
+
+src/REGS/Regs.i: src/REGS/Regs.cpp.i
+.PHONY : src/REGS/Regs.i
+
+# target to preprocess a source file
+src/REGS/Regs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.i
+.PHONY : src/REGS/Regs.cpp.i
+
+src/REGS/Regs.s: src/REGS/Regs.cpp.s
+.PHONY : src/REGS/Regs.s
+
+# target to generate assembly for a file
+src/REGS/Regs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.s
+.PHONY : src/REGS/Regs.cpp.s
+
 src/RISCV.o: src/RISCV.cpp.o
 .PHONY : src/RISCV.o
 
@@ -546,33 +654,6 @@ src/RISCV.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/RISCV.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/RISCV.cpp.s
 .PHONY : src/RISCV.cpp.s
-
-src/Regs.o: src/Regs.cpp.o
-.PHONY : src/Regs.o
-
-# target to build an object file
-src/Regs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Regs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Regs.cpp.o
-.PHONY : src/Regs.cpp.o
-
-src/Regs.i: src/Regs.cpp.i
-.PHONY : src/Regs.i
-
-# target to preprocess a source file
-src/Regs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Regs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Regs.cpp.i
-.PHONY : src/Regs.cpp.i
-
-src/Regs.s: src/Regs.cpp.s
-.PHONY : src/Regs.s
-
-# target to generate assembly for a file
-src/Regs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Regs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Regs.cpp.s
-.PHONY : src/Regs.cpp.s
 
 src/Stages/DecodeStage.o: src/Stages/DecodeStage.cpp.o
 .PHONY : src/Stages/DecodeStage.o
@@ -1166,6 +1247,9 @@ help:
 	@echo "... src/InstructionFormat/BType.o"
 	@echo "... src/InstructionFormat/BType.i"
 	@echo "... src/InstructionFormat/BType.s"
+	@echo "... src/InstructionFormat/CSRType.o"
+	@echo "... src/InstructionFormat/CSRType.i"
+	@echo "... src/InstructionFormat/CSRType.s"
 	@echo "... src/InstructionFormat/IType.o"
 	@echo "... src/InstructionFormat/IType.i"
 	@echo "... src/InstructionFormat/IType.s"
@@ -1181,6 +1265,9 @@ help:
 	@echo "... src/InstructionFormat/SType.o"
 	@echo "... src/InstructionFormat/SType.i"
 	@echo "... src/InstructionFormat/SType.s"
+	@echo "... src/InstructionFormat/SystemType.o"
+	@echo "... src/InstructionFormat/SystemType.i"
+	@echo "... src/InstructionFormat/SystemType.s"
 	@echo "... src/InstructionFormat/UType.o"
 	@echo "... src/InstructionFormat/UType.i"
 	@echo "... src/InstructionFormat/UType.s"
@@ -1196,12 +1283,15 @@ help:
 	@echo "... src/Memory/memory.o"
 	@echo "... src/Memory/memory.i"
 	@echo "... src/Memory/memory.s"
+	@echo "... src/REGS/CSR.o"
+	@echo "... src/REGS/CSR.i"
+	@echo "... src/REGS/CSR.s"
+	@echo "... src/REGS/Regs.o"
+	@echo "... src/REGS/Regs.i"
+	@echo "... src/REGS/Regs.s"
 	@echo "... src/RISCV.o"
 	@echo "... src/RISCV.i"
 	@echo "... src/RISCV.s"
-	@echo "... src/Regs.o"
-	@echo "... src/Regs.i"
-	@echo "... src/Regs.s"
 	@echo "... src/Stages/DecodeStage.o"
 	@echo "... src/Stages/DecodeStage.i"
 	@echo "... src/Stages/DecodeStage.s"

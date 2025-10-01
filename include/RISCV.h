@@ -6,7 +6,8 @@
 #include <memory>
 #include <vector>
 #include "Stages/Stage.h"
-#include "Regs.h"
+#include "REGS/Regs.h"
+#include "REGS/CSR.h"
 #include "Memory/MemoryBus.h"
 #include "Utils/DecoderUtils.h"
 #include "Utils/ALUOp.h"
@@ -19,10 +20,16 @@ class RISCV
 public:
     // Core state
     Regs regs;                      // Register file
+    CSR csr;                        // Control and status registers
     std::shared_ptr<MemoryBus> bus; // Unified memory interface
     uint32_t pc = 0;                // Program counter
     uint32_t end_address;
     ControlLogic control_logic;
+
+    // Trap redirect state (for exceptions & interrupts)
+    bool trap_taken = false;
+    uint32_t trap_target = 0;
+
     // Pipeline registers
     struct IFID
     {
@@ -51,6 +58,21 @@ public:
 
             // conditional branches
             bool is_branch = false;
+
+            // SYSTEM instruction (ECALL, MRET, CSR ops)
+            bool is_system = false;
+            struct
+            {
+                uint8_t funct3 = 0;       // instr[14:12]
+                uint16_t imm12 = 0;       // instr[31:20] (funct12)
+                uint32_t pc_of_instr = 0; // PC of the SYSTEM instr -> goes to MEPC
+                bool writes_rd = false;   // ECALL/MRET=false; CSR ops will set true
+                // (later: uint16_t csr_addr; uint8_t csr_op; uint8_t zimm;)
+            } system;
+
+            // CSR
+            bool is_csr = false;
+            CSRAddr csr_addr = CSRAddr::MSTATUS; // bits [31:20] for CSR index
     } id_ex;
 
     struct EXMEM
@@ -68,7 +90,7 @@ public:
         bool reg_write = false;
         WBSel wb_sel = WBSel::WB_ALU;
     } mem_wb;
-
+ 
     // Ordered pipeline stages
     std::vector<std::unique_ptr<Stage>> stages;
 

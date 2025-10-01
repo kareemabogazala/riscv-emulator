@@ -5,29 +5,40 @@
 #include "InstructionFormat/SType.h"
 #include "InstructionFormat/BType.h"
 #include "InstructionFormat/UType.h"
-// In future: include other types like IType, UType, etc.
+#include "InstructionFormat/SystemType.h"
+#include "InstructionFormat/CSRType.h"
+
 #include "Utils/DecoderUtils.h"
 
-std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode)
+std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode, uint8_t funct3)
 {
     switch (opcode)
     {
-    case 0x33: // R-type opcode for arithmetic instructions
+    case 0x33: // R-type
         return std::make_unique<RType>();
-    case 0x6F: // JAL opcode
+    case 0x6F: // JAL
         return std::make_unique<JType>();
-    case 0x13: // I-type ALU instructions (addi, andi, ori, etc.)
+    case 0x13: // I-type ALU
         return std::make_unique<IType>();
-    case 0x03: // Load instructions
+    case 0x03: // Loads
         return std::make_unique<LType>();
-    case 0x23:
+    case 0x23: // Stores
         return std::make_unique<SType>();
-    case 0x63:
+    case 0x63: // Branches
         return std::make_unique<BType>();
-    case 0x37:
+    case 0x37: // LUI
         return std::make_unique<UType>();
-    case 0x17:
+    case 0x17: // AUIPC
         return std::make_unique<UType>();
+    case 0x73: // SYSTEM
+        if (funct3 == 0b000)
+        {
+            return std::make_unique<SystemType>(); // ECALL, MRET, etc.
+        }
+        else
+        {
+            return std::make_unique<CSRType>(); // CSRRW, CSRRS, CSRRC
+        }
     default:
         throw std::runtime_error("Unknown instruction format for opcode: " + std::to_string(opcode));
     }

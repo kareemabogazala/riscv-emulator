@@ -11,6 +11,8 @@ class ExecuteStage : public Stage {
     public:
     void tick(RISCV& cpu) override;
 
+    bool is_system_instruction(RISCV& cpu);
+    void handle_system_instruction(RISCV& cpu);
     //
     void dump_EXMEM(RISCV& cpu) const;
 };

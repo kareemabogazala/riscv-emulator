@@ -1,5 +1,5 @@
 #include "catch.hpp"
-#include "regs.h"
+#include "REGS/regs.h"
 
 TEST_CASE("Regs Basic Read/Write", "[regs]")
 {

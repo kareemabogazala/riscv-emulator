@@ -1,5 +1,5 @@
 #include "catch.hpp"
-#include "regs.h"
+#include "REGS/regs.h"
 #include "Memory/DMEM.h"
 
 static constexpr uint32_t BASE = 0x5000;
