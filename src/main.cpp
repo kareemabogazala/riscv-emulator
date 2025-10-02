@@ -25,9 +25,9 @@ int main()
    cpu.csr.write(CSRAddr::MTVEC, 0x400);
 
    // Handler code (addi t1,t1,1 ; mret)
-   cpu.load_program("AssemblyCode/trap_handler.bin", 0x400);
+   cpu.load_program("../AssemblyCode/trap_handler.bin", 0x400);
 
-   cpu.load_program("AssemblyCode/ecall.bin", 0x0);
+   cpu.load_program("../AssemblyCode/ecall.bin", 0x0);
 
    std::cout << "\n[Before Execution] Register Dump:\n";
    cpu.regs.dump();
