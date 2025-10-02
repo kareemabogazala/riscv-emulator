@@ -10,8 +10,8 @@
 TEST_CASE("ExecuteStage performs correct ALU operations", "[execute]")
 {
     IMem imem(0x00000000, 64);
-    DMem dmem(0x00100000, 64);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 64);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     // Set register x2 = 10, x3 = 32
@@ -33,8 +33,8 @@ TEST_CASE("ExecuteStage performs correct ALU operations", "[execute]")
 TEST_CASE("ExecuteStage computes correct ALU results (without writeback)", "[execute][pipeline]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     // Load all 10 R-type instructions

@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <iomanip>
-
+#include "MemoryLayout.h"
 // Memory permission flags
 #define MEM_R (1 << 0)
 #define MEM_W (1 << 1)
@@ -21,8 +21,8 @@ protected:
     uint8_t flags; // permission flags (MEM_R | MEM_W | MEM_X)
 
 public:
-    Memory(uint32_t base, uint32_t size, uint8_t flags);
 
+    Memory(uint32_t base, uint32_t size, uint8_t flags = MEM_R | MEM_W | MEM_X);
     // Read methods
     virtual uint32_t read32(uint32_t addr) const;
     virtual uint16_t read16(uint32_t addr) const;
@@ -36,6 +36,10 @@ public:
     // Address validation
     bool in_range(uint32_t addr) const;
 
+    // code loading (for IMEM and DMEM)
+    void load_code(const std::vector<uint8_t> &bytes, uint32_t offset = 0);
+    void load_code32(const std::vector<uint32_t> &instrs, uint32_t offset);
+    void load_code_from_file(const std::string &path, uint32_t offset);
     // Debugging
     template <typename Func>
     void dump(uint32_t start, uint32_t end, Func transform) const

@@ -46,18 +46,21 @@ target_include_directories(emulator PRIVATE include external)
 # ========== TESTS ===========
 # ============================
 
-# Gather test sources
-file(GLOB_RECURSE TEST_SOURCES
-    "tests/*.cpp"
-)
+option(BUILD_TESTS "Build unit tests" ON)
 
-# Build run_tests (without main.cpp from src)
-add_executable(run_tests
-    ${TEST_SOURCES}
-    ${EMULATOR_SOURCES_NO_MAIN}
-)
+if(BUILD_TESTS)
+    # Gather test sources
+    file(GLOB_RECURSE TEST_SOURCES
+        "tests/*.cpp"
+    )
 
-target_include_directories(run_tests PRIVATE include external)
+    # Build run_tests (without main.cpp from src)
+    add_executable(run_tests
+        ${TEST_SOURCES}
+        ${EMULATOR_SOURCES_NO_MAIN}
+    )
 
-# Link libraries if needed (e.g., Catch2)
-# target_link_libraries(run_tests ...)
+    target_include_directories(run_tests PRIVATE include external)
+
+    # target_link_libraries(run_tests ...) # Add Catch2 or other libs if needed
+endif()

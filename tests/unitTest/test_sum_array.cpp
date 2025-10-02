@@ -12,8 +12,8 @@
 TEST_CASE("Array sum program runs correctly", "[loop][memory][registers]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     cpu.load_program("../AssemblyCode/array_sum.bin", 0);

@@ -7,8 +7,8 @@
 TEST_CASE("Branch instructions execute correctly", "[branch][control_flow]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     cpu.load_program("../AssemblyCode/branch_test.bin", 0);

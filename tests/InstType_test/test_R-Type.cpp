@@ -12,8 +12,8 @@
 TEST_CASE("ALU instructions produce correct results in register file (writeback verified)", "[execute][writeback]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     // Set inputs for all 10 instructions
@@ -91,8 +91,8 @@ static void check_regs(const Regs &regs, const std::array<uint32_t, 32> &exp)
 TEST_CASE("Chain of R-type adds updates registers at 3 and 9 instructions", "[rtype][chain]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     // 2) set up x2 (the only input register)

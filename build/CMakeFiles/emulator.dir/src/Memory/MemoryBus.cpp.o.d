@@ -1,7 +1,7 @@
 CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -796,6 +796,5 @@ CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream

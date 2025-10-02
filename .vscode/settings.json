@@ -51,7 +51,8 @@
         "vector": "cpp",
         "algorithm": "cpp",
         "iomanip": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "fstream": "cpp"
     },
     "cmake.sourceDirectory": "/Users/kareemabogazala/Desktop/Projects/riscv-emulator/riscv-emulator",
     "C_Cpp.errorSquiggles": "disabled"

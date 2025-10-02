@@ -7,8 +7,8 @@
 TEST_CASE("U-Type instructions LUI and AUIPC", "[u-type]")
 {
     IMem imem(0x00000000, 512);
-    DMem dmem(0x00100000, 512);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 512);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     cpu.load_program("../AssemblyCode/u_type_test.bin", 0);

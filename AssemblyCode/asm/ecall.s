@@ -2,7 +2,7 @@
 .globl _start
 _start:
 
-    addi t1, x0, 41        # t1 = 9
+    addi t1, x0, 41        # t1 = 41
     ecall                 # t1 = 42
     addi t2,x0,42         # t2 = 42
     beq t1, t2, label_beq_taken

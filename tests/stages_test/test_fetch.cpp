@@ -8,8 +8,8 @@
 TEST_CASE("FetchStage: fetches correct instruction and updates pc_next", "[fetch]")
 {
     IMem imem(0x00000000, 64);
-    DMem dmem(0x00100000, 64);
-    auto bus = std::make_shared<MemoryBus>(dmem, imem);
+    Memory ram(0x00100000, 64);
+    auto bus = std::make_shared<MemoryBus>(ram);
     RISCV cpu(bus);
 
     // Load instructions as bytes (little-endian)

@@ -11,6 +11,7 @@ public:
     uint32_t read(CSRAddr addr) const;
     void write(CSRAddr addr, uint32_t value);
 
+    void trap(uint32_t cause, uint32_t pc, uint32_t tval);
     void trap_on_ecall(uint32_t pc);
     uint32_t do_mret();
 

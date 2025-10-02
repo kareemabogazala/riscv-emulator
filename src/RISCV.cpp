@@ -9,12 +9,18 @@
 
 RISCV::RISCV(std::shared_ptr<MemoryBus> mem_bus) : bus(mem_bus)
 {
-    // Initialize the Fetch stage and add to stages vector
+    // Pipeline setup
     stages.emplace_back(std::make_unique<FetchStage>());
     stages.emplace_back(std::make_unique<DecodeStage>());
     stages.emplace_back(std::make_unique<ExecuteStage>());
     stages.emplace_back(std::make_unique<MemoryStage>());
     stages.emplace_back(std::make_unique<WritebackStage>());
+
+    // --- Initialize registers ---
+    regs.write(2, MemoryLayout::STACK_TOP);
+
+    // --- Initialize PC ---
+    pc = MemoryLayout::KERNEL_BASE; // default entry (0x8010_0000 for now)
 }
 
 void RISCV::step()
@@ -41,7 +47,7 @@ int RISCV::run(int max_cycles)
        step();
        if (DEBUG.dump_dmem_every_cycle)
        {
-           bus->dmem.dump(0x00100000, 0x00100010, default_transform2);
+           bus->ram.dump(0x00100000, 0x00100010, default_transform2);
        }
       // if (pc >= end_address) break;
     }
@@ -103,7 +109,7 @@ void RISCV::dumpIDEX() const{
 
 void RISCV::load_program(const std::string &path, uint32_t load_address = 0x0)
 {
-    bus->imem.load_code_from_file(path, load_address);
+    bus->ram.load_code_from_file(path, load_address);
     pc = load_address;
-    end_address = load_address + bus->imem.end_address; // Or just path size if you track it
+    end_address = MemoryLayout::RAM_BASE + MemoryLayout::RAM_SIZE; // Or just path size if you track it
 }

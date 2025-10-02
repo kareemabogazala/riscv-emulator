@@ -1635,10 +1635,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/BType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -2445,10 +2444,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.o: /Users/kareemabogaz
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/CSRType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -3256,10 +3254,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/IType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -4067,10 +4064,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/JType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -4878,10 +4874,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/LType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -5689,10 +5684,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.o: /Users/kareemabogazala
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/RType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -6500,10 +6494,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/SType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -7310,10 +7303,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.o: /Users/kareemabo
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/SystemType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -8121,10 +8113,9 @@ CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/UType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -8317,6 +8308,7 @@ CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Pr
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h \
@@ -8369,6 +8361,22 @@ CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Pr
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -8736,7 +8744,9 @@ CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Pr
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
@@ -8929,6 +8939,7 @@ CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/Pr
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
 
 CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/IMEM.cpp \
@@ -9746,6 +9757,7 @@ CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o: /Users/kareemabogazala/Desktop/Pr
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
 
 CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/MemoryBus.cpp \
@@ -10544,10 +10556,9 @@ CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o: /Users/kareemabogazala/Deskt
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h
 
 CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -10733,6 +10744,7 @@ CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h \
@@ -10785,6 +10797,22 @@ CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -11152,7 +11180,9 @@ CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
@@ -11345,6 +11375,7 @@ CMakeFiles/emulator.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
 
 CMakeFiles/emulator.dir/src/REGS/CSR.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/REGS/CSR.cpp \
@@ -13584,10 +13615,9 @@ CMakeFiles/emulator.dir/src/RISCV.cpp.o: /Users/kareemabogazala/Desktop/Projects
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -14398,10 +14428,9 @@ CMakeFiles/emulator.dir/src/Stages/DecodeStage.cpp.o: /Users/kareemabogazala/Des
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -15211,10 +15240,9 @@ CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.o: /Users/kareemabogazala/De
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Core/BranchComp.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -16022,10 +16050,9 @@ CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.o: /Users/kareemabogazala/Desk
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -16832,10 +16859,9 @@ CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.o: /Users/kareemabogazala/Des
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -17642,10 +17668,9 @@ CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.o: /Users/kareemabogazala/
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -18461,10 +18486,9 @@ CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.o: /Users/kareemabogazala/De
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/SType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/SystemType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/UType.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -19271,10 +19295,9 @@ CMakeFiles/emulator.dir/src/main.cpp.o: /Users/kareemabogazala/Desktop/Projects/
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/ControlLogic.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/DebugConfig.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/Regs.h \
@@ -19311,6 +19334,8 @@ CMakeFiles/emulator.dir/src/main.cpp.o: /Users/kareemabogazala/Desktop/Projects/
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/REGS/CSR.cpp:
 
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp:
+
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
 
@@ -19368,9 +19393,9 @@ CMakeFiles/emulator.dir/src/main.cpp.o: /Users/kareemabogazala/Desktop/Projects/
 
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h:
 
-/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h:
-
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h:
+
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h:
 
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h:
 
@@ -20405,6 +20430,8 @@ CMakeFiles/emulator.dir/src/main.cpp.o: /Users/kareemabogazala/Desktop/Projects/
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
+
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h:
 

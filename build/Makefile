@@ -129,26 +129,12 @@ emulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/build
 .PHONY : emulator/fast
 
-#=============================================================================
-# Target rules for targets named run_tests
-
-# Build rule for target.
-run_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
-.PHONY : run_tests
-
-# fast build rule for target.
-run_tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
-
 src/Core/ALU.o: src/Core/ALU.cpp.o
 .PHONY : src/Core/ALU.o
 
 # target to build an object file
 src/Core/ALU.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.o
 .PHONY : src/Core/ALU.cpp.o
 
 src/Core/ALU.i: src/Core/ALU.cpp.i
@@ -157,7 +143,6 @@ src/Core/ALU.i: src/Core/ALU.cpp.i
 # target to preprocess a source file
 src/Core/ALU.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.i
 .PHONY : src/Core/ALU.cpp.i
 
 src/Core/ALU.s: src/Core/ALU.cpp.s
@@ -166,7 +151,6 @@ src/Core/ALU.s: src/Core/ALU.cpp.s
 # target to generate assembly for a file
 src/Core/ALU.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/ALU.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/ALU.cpp.s
 .PHONY : src/Core/ALU.cpp.s
 
 src/Core/BranchComp.o: src/Core/BranchComp.cpp.o
@@ -175,7 +159,6 @@ src/Core/BranchComp.o: src/Core/BranchComp.cpp.o
 # target to build an object file
 src/Core/BranchComp.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.o
 .PHONY : src/Core/BranchComp.cpp.o
 
 src/Core/BranchComp.i: src/Core/BranchComp.cpp.i
@@ -184,7 +167,6 @@ src/Core/BranchComp.i: src/Core/BranchComp.cpp.i
 # target to preprocess a source file
 src/Core/BranchComp.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.i
 .PHONY : src/Core/BranchComp.cpp.i
 
 src/Core/BranchComp.s: src/Core/BranchComp.cpp.s
@@ -193,7 +175,6 @@ src/Core/BranchComp.s: src/Core/BranchComp.cpp.s
 # target to generate assembly for a file
 src/Core/BranchComp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Core/BranchComp.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Core/BranchComp.cpp.s
 .PHONY : src/Core/BranchComp.cpp.s
 
 src/DebugConfig.o: src/DebugConfig.cpp.o
@@ -202,7 +183,6 @@ src/DebugConfig.o: src/DebugConfig.cpp.o
 # target to build an object file
 src/DebugConfig.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/DebugConfig.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.o
 .PHONY : src/DebugConfig.cpp.o
 
 src/DebugConfig.i: src/DebugConfig.cpp.i
@@ -211,7 +191,6 @@ src/DebugConfig.i: src/DebugConfig.cpp.i
 # target to preprocess a source file
 src/DebugConfig.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/DebugConfig.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.i
 .PHONY : src/DebugConfig.cpp.i
 
 src/DebugConfig.s: src/DebugConfig.cpp.s
@@ -220,7 +199,6 @@ src/DebugConfig.s: src/DebugConfig.cpp.s
 # target to generate assembly for a file
 src/DebugConfig.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/DebugConfig.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/DebugConfig.cpp.s
 .PHONY : src/DebugConfig.cpp.s
 
 src/InstructionFormat/BType.o: src/InstructionFormat/BType.cpp.o
@@ -229,7 +207,6 @@ src/InstructionFormat/BType.o: src/InstructionFormat/BType.cpp.o
 # target to build an object file
 src/InstructionFormat/BType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.o
 .PHONY : src/InstructionFormat/BType.cpp.o
 
 src/InstructionFormat/BType.i: src/InstructionFormat/BType.cpp.i
@@ -238,7 +215,6 @@ src/InstructionFormat/BType.i: src/InstructionFormat/BType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/BType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.i
 .PHONY : src/InstructionFormat/BType.cpp.i
 
 src/InstructionFormat/BType.s: src/InstructionFormat/BType.cpp.s
@@ -247,7 +223,6 @@ src/InstructionFormat/BType.s: src/InstructionFormat/BType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/BType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/BType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.s
 .PHONY : src/InstructionFormat/BType.cpp.s
 
 src/InstructionFormat/CSRType.o: src/InstructionFormat/CSRType.cpp.o
@@ -256,7 +231,6 @@ src/InstructionFormat/CSRType.o: src/InstructionFormat/CSRType.cpp.o
 # target to build an object file
 src/InstructionFormat/CSRType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.o
 .PHONY : src/InstructionFormat/CSRType.cpp.o
 
 src/InstructionFormat/CSRType.i: src/InstructionFormat/CSRType.cpp.i
@@ -265,7 +239,6 @@ src/InstructionFormat/CSRType.i: src/InstructionFormat/CSRType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/CSRType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.i
 .PHONY : src/InstructionFormat/CSRType.cpp.i
 
 src/InstructionFormat/CSRType.s: src/InstructionFormat/CSRType.cpp.s
@@ -274,7 +247,6 @@ src/InstructionFormat/CSRType.s: src/InstructionFormat/CSRType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/CSRType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/CSRType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.s
 .PHONY : src/InstructionFormat/CSRType.cpp.s
 
 src/InstructionFormat/IType.o: src/InstructionFormat/IType.cpp.o
@@ -283,7 +255,6 @@ src/InstructionFormat/IType.o: src/InstructionFormat/IType.cpp.o
 # target to build an object file
 src/InstructionFormat/IType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.o
 .PHONY : src/InstructionFormat/IType.cpp.o
 
 src/InstructionFormat/IType.i: src/InstructionFormat/IType.cpp.i
@@ -292,7 +263,6 @@ src/InstructionFormat/IType.i: src/InstructionFormat/IType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/IType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.i
 .PHONY : src/InstructionFormat/IType.cpp.i
 
 src/InstructionFormat/IType.s: src/InstructionFormat/IType.cpp.s
@@ -301,7 +271,6 @@ src/InstructionFormat/IType.s: src/InstructionFormat/IType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/IType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/IType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.s
 .PHONY : src/InstructionFormat/IType.cpp.s
 
 src/InstructionFormat/JType.o: src/InstructionFormat/JType.cpp.o
@@ -310,7 +279,6 @@ src/InstructionFormat/JType.o: src/InstructionFormat/JType.cpp.o
 # target to build an object file
 src/InstructionFormat/JType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o
 .PHONY : src/InstructionFormat/JType.cpp.o
 
 src/InstructionFormat/JType.i: src/InstructionFormat/JType.cpp.i
@@ -319,7 +287,6 @@ src/InstructionFormat/JType.i: src/InstructionFormat/JType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/JType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.i
 .PHONY : src/InstructionFormat/JType.cpp.i
 
 src/InstructionFormat/JType.s: src/InstructionFormat/JType.cpp.s
@@ -328,7 +295,6 @@ src/InstructionFormat/JType.s: src/InstructionFormat/JType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/JType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/JType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.s
 .PHONY : src/InstructionFormat/JType.cpp.s
 
 src/InstructionFormat/LType.o: src/InstructionFormat/LType.cpp.o
@@ -337,7 +303,6 @@ src/InstructionFormat/LType.o: src/InstructionFormat/LType.cpp.o
 # target to build an object file
 src/InstructionFormat/LType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.o
 .PHONY : src/InstructionFormat/LType.cpp.o
 
 src/InstructionFormat/LType.i: src/InstructionFormat/LType.cpp.i
@@ -346,7 +311,6 @@ src/InstructionFormat/LType.i: src/InstructionFormat/LType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/LType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.i
 .PHONY : src/InstructionFormat/LType.cpp.i
 
 src/InstructionFormat/LType.s: src/InstructionFormat/LType.cpp.s
@@ -355,7 +319,6 @@ src/InstructionFormat/LType.s: src/InstructionFormat/LType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/LType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/LType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.s
 .PHONY : src/InstructionFormat/LType.cpp.s
 
 src/InstructionFormat/RTpe.o: src/InstructionFormat/RTpe.cpp.o
@@ -364,7 +327,6 @@ src/InstructionFormat/RTpe.o: src/InstructionFormat/RTpe.cpp.o
 # target to build an object file
 src/InstructionFormat/RTpe.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.o
 .PHONY : src/InstructionFormat/RTpe.cpp.o
 
 src/InstructionFormat/RTpe.i: src/InstructionFormat/RTpe.cpp.i
@@ -373,7 +335,6 @@ src/InstructionFormat/RTpe.i: src/InstructionFormat/RTpe.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/RTpe.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.i
 .PHONY : src/InstructionFormat/RTpe.cpp.i
 
 src/InstructionFormat/RTpe.s: src/InstructionFormat/RTpe.cpp.s
@@ -382,7 +343,6 @@ src/InstructionFormat/RTpe.s: src/InstructionFormat/RTpe.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/RTpe.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/RTpe.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.s
 .PHONY : src/InstructionFormat/RTpe.cpp.s
 
 src/InstructionFormat/SType.o: src/InstructionFormat/SType.cpp.o
@@ -391,7 +351,6 @@ src/InstructionFormat/SType.o: src/InstructionFormat/SType.cpp.o
 # target to build an object file
 src/InstructionFormat/SType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.o
 .PHONY : src/InstructionFormat/SType.cpp.o
 
 src/InstructionFormat/SType.i: src/InstructionFormat/SType.cpp.i
@@ -400,7 +359,6 @@ src/InstructionFormat/SType.i: src/InstructionFormat/SType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/SType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.i
 .PHONY : src/InstructionFormat/SType.cpp.i
 
 src/InstructionFormat/SType.s: src/InstructionFormat/SType.cpp.s
@@ -409,7 +367,6 @@ src/InstructionFormat/SType.s: src/InstructionFormat/SType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/SType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.s
 .PHONY : src/InstructionFormat/SType.cpp.s
 
 src/InstructionFormat/SystemType.o: src/InstructionFormat/SystemType.cpp.o
@@ -418,7 +375,6 @@ src/InstructionFormat/SystemType.o: src/InstructionFormat/SystemType.cpp.o
 # target to build an object file
 src/InstructionFormat/SystemType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.o
 .PHONY : src/InstructionFormat/SystemType.cpp.o
 
 src/InstructionFormat/SystemType.i: src/InstructionFormat/SystemType.cpp.i
@@ -427,7 +383,6 @@ src/InstructionFormat/SystemType.i: src/InstructionFormat/SystemType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/SystemType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.i
 .PHONY : src/InstructionFormat/SystemType.cpp.i
 
 src/InstructionFormat/SystemType.s: src/InstructionFormat/SystemType.cpp.s
@@ -436,7 +391,6 @@ src/InstructionFormat/SystemType.s: src/InstructionFormat/SystemType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/SystemType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/SystemType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.s
 .PHONY : src/InstructionFormat/SystemType.cpp.s
 
 src/InstructionFormat/UType.o: src/InstructionFormat/UType.cpp.o
@@ -445,7 +399,6 @@ src/InstructionFormat/UType.o: src/InstructionFormat/UType.cpp.o
 # target to build an object file
 src/InstructionFormat/UType.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.o
 .PHONY : src/InstructionFormat/UType.cpp.o
 
 src/InstructionFormat/UType.i: src/InstructionFormat/UType.cpp.i
@@ -454,7 +407,6 @@ src/InstructionFormat/UType.i: src/InstructionFormat/UType.cpp.i
 # target to preprocess a source file
 src/InstructionFormat/UType.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.i
 .PHONY : src/InstructionFormat/UType.cpp.i
 
 src/InstructionFormat/UType.s: src/InstructionFormat/UType.cpp.s
@@ -463,7 +415,6 @@ src/InstructionFormat/UType.s: src/InstructionFormat/UType.cpp.s
 # target to generate assembly for a file
 src/InstructionFormat/UType.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/InstructionFormat/UType.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.s
 .PHONY : src/InstructionFormat/UType.cpp.s
 
 src/Memory/DMEM.o: src/Memory/DMEM.cpp.o
@@ -472,7 +423,6 @@ src/Memory/DMEM.o: src/Memory/DMEM.cpp.o
 # target to build an object file
 src/Memory/DMEM.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o
 .PHONY : src/Memory/DMEM.cpp.o
 
 src/Memory/DMEM.i: src/Memory/DMEM.cpp.i
@@ -481,7 +431,6 @@ src/Memory/DMEM.i: src/Memory/DMEM.cpp.i
 # target to preprocess a source file
 src/Memory/DMEM.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.i
 .PHONY : src/Memory/DMEM.cpp.i
 
 src/Memory/DMEM.s: src/Memory/DMEM.cpp.s
@@ -490,7 +439,6 @@ src/Memory/DMEM.s: src/Memory/DMEM.cpp.s
 # target to generate assembly for a file
 src/Memory/DMEM.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/DMEM.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.s
 .PHONY : src/Memory/DMEM.cpp.s
 
 src/Memory/IMEM.o: src/Memory/IMEM.cpp.o
@@ -499,7 +447,6 @@ src/Memory/IMEM.o: src/Memory/IMEM.cpp.o
 # target to build an object file
 src/Memory/IMEM.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.o
 .PHONY : src/Memory/IMEM.cpp.o
 
 src/Memory/IMEM.i: src/Memory/IMEM.cpp.i
@@ -508,7 +455,6 @@ src/Memory/IMEM.i: src/Memory/IMEM.cpp.i
 # target to preprocess a source file
 src/Memory/IMEM.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.i
 .PHONY : src/Memory/IMEM.cpp.i
 
 src/Memory/IMEM.s: src/Memory/IMEM.cpp.s
@@ -517,7 +463,6 @@ src/Memory/IMEM.s: src/Memory/IMEM.cpp.s
 # target to generate assembly for a file
 src/Memory/IMEM.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/IMEM.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/IMEM.cpp.s
 .PHONY : src/Memory/IMEM.cpp.s
 
 src/Memory/MemoryBus.o: src/Memory/MemoryBus.cpp.o
@@ -526,7 +471,6 @@ src/Memory/MemoryBus.o: src/Memory/MemoryBus.cpp.o
 # target to build an object file
 src/Memory/MemoryBus.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o
 .PHONY : src/Memory/MemoryBus.cpp.o
 
 src/Memory/MemoryBus.i: src/Memory/MemoryBus.cpp.i
@@ -535,7 +479,6 @@ src/Memory/MemoryBus.i: src/Memory/MemoryBus.cpp.i
 # target to preprocess a source file
 src/Memory/MemoryBus.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.i
 .PHONY : src/Memory/MemoryBus.cpp.i
 
 src/Memory/MemoryBus.s: src/Memory/MemoryBus.cpp.s
@@ -544,7 +487,6 @@ src/Memory/MemoryBus.s: src/Memory/MemoryBus.cpp.s
 # target to generate assembly for a file
 src/Memory/MemoryBus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/MemoryBus.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.s
 .PHONY : src/Memory/MemoryBus.cpp.s
 
 src/Memory/memory.o: src/Memory/memory.cpp.o
@@ -553,7 +495,6 @@ src/Memory/memory.o: src/Memory/memory.cpp.o
 # target to build an object file
 src/Memory/memory.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/memory.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o
 .PHONY : src/Memory/memory.cpp.o
 
 src/Memory/memory.i: src/Memory/memory.cpp.i
@@ -562,7 +503,6 @@ src/Memory/memory.i: src/Memory/memory.cpp.i
 # target to preprocess a source file
 src/Memory/memory.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/memory.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/memory.cpp.i
 .PHONY : src/Memory/memory.cpp.i
 
 src/Memory/memory.s: src/Memory/memory.cpp.s
@@ -571,7 +511,6 @@ src/Memory/memory.s: src/Memory/memory.cpp.s
 # target to generate assembly for a file
 src/Memory/memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Memory/memory.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Memory/memory.cpp.s
 .PHONY : src/Memory/memory.cpp.s
 
 src/REGS/CSR.o: src/REGS/CSR.cpp.o
@@ -580,7 +519,6 @@ src/REGS/CSR.o: src/REGS/CSR.cpp.o
 # target to build an object file
 src/REGS/CSR.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.o
 .PHONY : src/REGS/CSR.cpp.o
 
 src/REGS/CSR.i: src/REGS/CSR.cpp.i
@@ -589,7 +527,6 @@ src/REGS/CSR.i: src/REGS/CSR.cpp.i
 # target to preprocess a source file
 src/REGS/CSR.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.i
 .PHONY : src/REGS/CSR.cpp.i
 
 src/REGS/CSR.s: src/REGS/CSR.cpp.s
@@ -598,7 +535,6 @@ src/REGS/CSR.s: src/REGS/CSR.cpp.s
 # target to generate assembly for a file
 src/REGS/CSR.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/CSR.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/CSR.cpp.s
 .PHONY : src/REGS/CSR.cpp.s
 
 src/REGS/Regs.o: src/REGS/Regs.cpp.o
@@ -607,7 +543,6 @@ src/REGS/Regs.o: src/REGS/Regs.cpp.o
 # target to build an object file
 src/REGS/Regs.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.o
 .PHONY : src/REGS/Regs.cpp.o
 
 src/REGS/Regs.i: src/REGS/Regs.cpp.i
@@ -616,7 +551,6 @@ src/REGS/Regs.i: src/REGS/Regs.cpp.i
 # target to preprocess a source file
 src/REGS/Regs.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.i
 .PHONY : src/REGS/Regs.cpp.i
 
 src/REGS/Regs.s: src/REGS/Regs.cpp.s
@@ -625,7 +559,6 @@ src/REGS/Regs.s: src/REGS/Regs.cpp.s
 # target to generate assembly for a file
 src/REGS/Regs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/REGS/Regs.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/REGS/Regs.cpp.s
 .PHONY : src/REGS/Regs.cpp.s
 
 src/RISCV.o: src/RISCV.cpp.o
@@ -634,7 +567,6 @@ src/RISCV.o: src/RISCV.cpp.o
 # target to build an object file
 src/RISCV.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/RISCV.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/RISCV.cpp.o
 .PHONY : src/RISCV.cpp.o
 
 src/RISCV.i: src/RISCV.cpp.i
@@ -643,7 +575,6 @@ src/RISCV.i: src/RISCV.cpp.i
 # target to preprocess a source file
 src/RISCV.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/RISCV.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/RISCV.cpp.i
 .PHONY : src/RISCV.cpp.i
 
 src/RISCV.s: src/RISCV.cpp.s
@@ -652,7 +583,6 @@ src/RISCV.s: src/RISCV.cpp.s
 # target to generate assembly for a file
 src/RISCV.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/RISCV.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/RISCV.cpp.s
 .PHONY : src/RISCV.cpp.s
 
 src/Stages/DecodeStage.o: src/Stages/DecodeStage.cpp.o
@@ -661,7 +591,6 @@ src/Stages/DecodeStage.o: src/Stages/DecodeStage.cpp.o
 # target to build an object file
 src/Stages/DecodeStage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/DecodeStage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.o
 .PHONY : src/Stages/DecodeStage.cpp.o
 
 src/Stages/DecodeStage.i: src/Stages/DecodeStage.cpp.i
@@ -670,7 +599,6 @@ src/Stages/DecodeStage.i: src/Stages/DecodeStage.cpp.i
 # target to preprocess a source file
 src/Stages/DecodeStage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/DecodeStage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.i
 .PHONY : src/Stages/DecodeStage.cpp.i
 
 src/Stages/DecodeStage.s: src/Stages/DecodeStage.cpp.s
@@ -679,7 +607,6 @@ src/Stages/DecodeStage.s: src/Stages/DecodeStage.cpp.s
 # target to generate assembly for a file
 src/Stages/DecodeStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/DecodeStage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.s
 .PHONY : src/Stages/DecodeStage.cpp.s
 
 src/Stages/ExecuteStage.o: src/Stages/ExecuteStage.cpp.o
@@ -688,7 +615,6 @@ src/Stages/ExecuteStage.o: src/Stages/ExecuteStage.cpp.o
 # target to build an object file
 src/Stages/ExecuteStage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.o
 .PHONY : src/Stages/ExecuteStage.cpp.o
 
 src/Stages/ExecuteStage.i: src/Stages/ExecuteStage.cpp.i
@@ -697,7 +623,6 @@ src/Stages/ExecuteStage.i: src/Stages/ExecuteStage.cpp.i
 # target to preprocess a source file
 src/Stages/ExecuteStage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.i
 .PHONY : src/Stages/ExecuteStage.cpp.i
 
 src/Stages/ExecuteStage.s: src/Stages/ExecuteStage.cpp.s
@@ -706,7 +631,6 @@ src/Stages/ExecuteStage.s: src/Stages/ExecuteStage.cpp.s
 # target to generate assembly for a file
 src/Stages/ExecuteStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/ExecuteStage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.s
 .PHONY : src/Stages/ExecuteStage.cpp.s
 
 src/Stages/FetchStage.o: src/Stages/FetchStage.cpp.o
@@ -715,7 +639,6 @@ src/Stages/FetchStage.o: src/Stages/FetchStage.cpp.o
 # target to build an object file
 src/Stages/FetchStage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/FetchStage.cpp.o
 .PHONY : src/Stages/FetchStage.cpp.o
 
 src/Stages/FetchStage.i: src/Stages/FetchStage.cpp.i
@@ -724,7 +647,6 @@ src/Stages/FetchStage.i: src/Stages/FetchStage.cpp.i
 # target to preprocess a source file
 src/Stages/FetchStage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/FetchStage.cpp.i
 .PHONY : src/Stages/FetchStage.cpp.i
 
 src/Stages/FetchStage.s: src/Stages/FetchStage.cpp.s
@@ -733,7 +655,6 @@ src/Stages/FetchStage.s: src/Stages/FetchStage.cpp.s
 # target to generate assembly for a file
 src/Stages/FetchStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/FetchStage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/FetchStage.cpp.s
 .PHONY : src/Stages/FetchStage.cpp.s
 
 src/Stages/MemoryStage.o: src/Stages/MemoryStage.cpp.o
@@ -742,7 +663,6 @@ src/Stages/MemoryStage.o: src/Stages/MemoryStage.cpp.o
 # target to build an object file
 src/Stages/MemoryStage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.o
 .PHONY : src/Stages/MemoryStage.cpp.o
 
 src/Stages/MemoryStage.i: src/Stages/MemoryStage.cpp.i
@@ -751,7 +671,6 @@ src/Stages/MemoryStage.i: src/Stages/MemoryStage.cpp.i
 # target to preprocess a source file
 src/Stages/MemoryStage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.i
 .PHONY : src/Stages/MemoryStage.cpp.i
 
 src/Stages/MemoryStage.s: src/Stages/MemoryStage.cpp.s
@@ -760,7 +679,6 @@ src/Stages/MemoryStage.s: src/Stages/MemoryStage.cpp.s
 # target to generate assembly for a file
 src/Stages/MemoryStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/MemoryStage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.s
 .PHONY : src/Stages/MemoryStage.cpp.s
 
 src/Stages/WritebackStage.o: src/Stages/WritebackStage.cpp.o
@@ -769,7 +687,6 @@ src/Stages/WritebackStage.o: src/Stages/WritebackStage.cpp.o
 # target to build an object file
 src/Stages/WritebackStage.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.o
 .PHONY : src/Stages/WritebackStage.cpp.o
 
 src/Stages/WritebackStage.i: src/Stages/WritebackStage.cpp.i
@@ -778,7 +695,6 @@ src/Stages/WritebackStage.i: src/Stages/WritebackStage.cpp.i
 # target to preprocess a source file
 src/Stages/WritebackStage.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.i
 .PHONY : src/Stages/WritebackStage.cpp.i
 
 src/Stages/WritebackStage.s: src/Stages/WritebackStage.cpp.s
@@ -787,7 +703,6 @@ src/Stages/WritebackStage.s: src/Stages/WritebackStage.cpp.s
 # target to generate assembly for a file
 src/Stages/WritebackStage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Stages/WritebackStage.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.s
 .PHONY : src/Stages/WritebackStage.cpp.s
 
 src/Utils/DecoderUtiles.o: src/Utils/DecoderUtiles.cpp.o
@@ -796,7 +711,6 @@ src/Utils/DecoderUtiles.o: src/Utils/DecoderUtiles.cpp.o
 # target to build an object file
 src/Utils/DecoderUtiles.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o
 .PHONY : src/Utils/DecoderUtiles.cpp.o
 
 src/Utils/DecoderUtiles.i: src/Utils/DecoderUtiles.cpp.i
@@ -805,7 +719,6 @@ src/Utils/DecoderUtiles.i: src/Utils/DecoderUtiles.cpp.i
 # target to preprocess a source file
 src/Utils/DecoderUtiles.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.i
 .PHONY : src/Utils/DecoderUtiles.cpp.i
 
 src/Utils/DecoderUtiles.s: src/Utils/DecoderUtiles.cpp.s
@@ -814,7 +727,6 @@ src/Utils/DecoderUtiles.s: src/Utils/DecoderUtiles.cpp.s
 # target to generate assembly for a file
 src/Utils/DecoderUtiles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.s
 .PHONY : src/Utils/DecoderUtiles.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -841,390 +753,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emulator.dir/build.make CMakeFiles/emulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/InstType_test/test_B-Type.o: tests/InstType_test/test_B-Type.cpp.o
-.PHONY : tests/InstType_test/test_B-Type.o
-
-# target to build an object file
-tests/InstType_test/test_B-Type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.o
-.PHONY : tests/InstType_test/test_B-Type.cpp.o
-
-tests/InstType_test/test_B-Type.i: tests/InstType_test/test_B-Type.cpp.i
-.PHONY : tests/InstType_test/test_B-Type.i
-
-# target to preprocess a source file
-tests/InstType_test/test_B-Type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.i
-.PHONY : tests/InstType_test/test_B-Type.cpp.i
-
-tests/InstType_test/test_B-Type.s: tests/InstType_test/test_B-Type.cpp.s
-.PHONY : tests/InstType_test/test_B-Type.s
-
-# target to generate assembly for a file
-tests/InstType_test/test_B-Type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.s
-.PHONY : tests/InstType_test/test_B-Type.cpp.s
-
-tests/InstType_test/test_I-Type.o: tests/InstType_test/test_I-Type.cpp.o
-.PHONY : tests/InstType_test/test_I-Type.o
-
-# target to build an object file
-tests/InstType_test/test_I-Type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.o
-.PHONY : tests/InstType_test/test_I-Type.cpp.o
-
-tests/InstType_test/test_I-Type.i: tests/InstType_test/test_I-Type.cpp.i
-.PHONY : tests/InstType_test/test_I-Type.i
-
-# target to preprocess a source file
-tests/InstType_test/test_I-Type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.i
-.PHONY : tests/InstType_test/test_I-Type.cpp.i
-
-tests/InstType_test/test_I-Type.s: tests/InstType_test/test_I-Type.cpp.s
-.PHONY : tests/InstType_test/test_I-Type.s
-
-# target to generate assembly for a file
-tests/InstType_test/test_I-Type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.s
-.PHONY : tests/InstType_test/test_I-Type.cpp.s
-
-tests/InstType_test/test_R-Type.o: tests/InstType_test/test_R-Type.cpp.o
-.PHONY : tests/InstType_test/test_R-Type.o
-
-# target to build an object file
-tests/InstType_test/test_R-Type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.o
-.PHONY : tests/InstType_test/test_R-Type.cpp.o
-
-tests/InstType_test/test_R-Type.i: tests/InstType_test/test_R-Type.cpp.i
-.PHONY : tests/InstType_test/test_R-Type.i
-
-# target to preprocess a source file
-tests/InstType_test/test_R-Type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.i
-.PHONY : tests/InstType_test/test_R-Type.cpp.i
-
-tests/InstType_test/test_R-Type.s: tests/InstType_test/test_R-Type.cpp.s
-.PHONY : tests/InstType_test/test_R-Type.s
-
-# target to generate assembly for a file
-tests/InstType_test/test_R-Type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.s
-.PHONY : tests/InstType_test/test_R-Type.cpp.s
-
-tests/InstType_test/test_SL-Type.o: tests/InstType_test/test_SL-Type.cpp.o
-.PHONY : tests/InstType_test/test_SL-Type.o
-
-# target to build an object file
-tests/InstType_test/test_SL-Type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.o
-.PHONY : tests/InstType_test/test_SL-Type.cpp.o
-
-tests/InstType_test/test_SL-Type.i: tests/InstType_test/test_SL-Type.cpp.i
-.PHONY : tests/InstType_test/test_SL-Type.i
-
-# target to preprocess a source file
-tests/InstType_test/test_SL-Type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.i
-.PHONY : tests/InstType_test/test_SL-Type.cpp.i
-
-tests/InstType_test/test_SL-Type.s: tests/InstType_test/test_SL-Type.cpp.s
-.PHONY : tests/InstType_test/test_SL-Type.s
-
-# target to generate assembly for a file
-tests/InstType_test/test_SL-Type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.s
-.PHONY : tests/InstType_test/test_SL-Type.cpp.s
-
-tests/InstType_test/test_U-Type.o: tests/InstType_test/test_U-Type.cpp.o
-.PHONY : tests/InstType_test/test_U-Type.o
-
-# target to build an object file
-tests/InstType_test/test_U-Type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.o
-.PHONY : tests/InstType_test/test_U-Type.cpp.o
-
-tests/InstType_test/test_U-Type.i: tests/InstType_test/test_U-Type.cpp.i
-.PHONY : tests/InstType_test/test_U-Type.i
-
-# target to preprocess a source file
-tests/InstType_test/test_U-Type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.i
-.PHONY : tests/InstType_test/test_U-Type.cpp.i
-
-tests/InstType_test/test_U-Type.s: tests/InstType_test/test_U-Type.cpp.s
-.PHONY : tests/InstType_test/test_U-Type.s
-
-# target to generate assembly for a file
-tests/InstType_test/test_U-Type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.s
-.PHONY : tests/InstType_test/test_U-Type.cpp.s
-
-tests/memory_test/test_dmem.o: tests/memory_test/test_dmem.cpp.o
-.PHONY : tests/memory_test/test_dmem.o
-
-# target to build an object file
-tests/memory_test/test_dmem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.o
-.PHONY : tests/memory_test/test_dmem.cpp.o
-
-tests/memory_test/test_dmem.i: tests/memory_test/test_dmem.cpp.i
-.PHONY : tests/memory_test/test_dmem.i
-
-# target to preprocess a source file
-tests/memory_test/test_dmem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.i
-.PHONY : tests/memory_test/test_dmem.cpp.i
-
-tests/memory_test/test_dmem.s: tests/memory_test/test_dmem.cpp.s
-.PHONY : tests/memory_test/test_dmem.s
-
-# target to generate assembly for a file
-tests/memory_test/test_dmem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_dmem.cpp.s
-.PHONY : tests/memory_test/test_dmem.cpp.s
-
-tests/memory_test/test_imem.o: tests/memory_test/test_imem.cpp.o
-.PHONY : tests/memory_test/test_imem.o
-
-# target to build an object file
-tests/memory_test/test_imem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.o
-.PHONY : tests/memory_test/test_imem.cpp.o
-
-tests/memory_test/test_imem.i: tests/memory_test/test_imem.cpp.i
-.PHONY : tests/memory_test/test_imem.i
-
-# target to preprocess a source file
-tests/memory_test/test_imem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.i
-.PHONY : tests/memory_test/test_imem.cpp.i
-
-tests/memory_test/test_imem.s: tests/memory_test/test_imem.cpp.s
-.PHONY : tests/memory_test/test_imem.s
-
-# target to generate assembly for a file
-tests/memory_test/test_imem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_imem.cpp.s
-.PHONY : tests/memory_test/test_imem.cpp.s
-
-tests/memory_test/test_memory_bus.o: tests/memory_test/test_memory_bus.cpp.o
-.PHONY : tests/memory_test/test_memory_bus.o
-
-# target to build an object file
-tests/memory_test/test_memory_bus.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o
-.PHONY : tests/memory_test/test_memory_bus.cpp.o
-
-tests/memory_test/test_memory_bus.i: tests/memory_test/test_memory_bus.cpp.i
-.PHONY : tests/memory_test/test_memory_bus.i
-
-# target to preprocess a source file
-tests/memory_test/test_memory_bus.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.i
-.PHONY : tests/memory_test/test_memory_bus.cpp.i
-
-tests/memory_test/test_memory_bus.s: tests/memory_test/test_memory_bus.cpp.s
-.PHONY : tests/memory_test/test_memory_bus.s
-
-# target to generate assembly for a file
-tests/memory_test/test_memory_bus.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.s
-.PHONY : tests/memory_test/test_memory_bus.cpp.s
-
-tests/memory_test/test_memory_general.o: tests/memory_test/test_memory_general.cpp.o
-.PHONY : tests/memory_test/test_memory_general.o
-
-# target to build an object file
-tests/memory_test/test_memory_general.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o
-.PHONY : tests/memory_test/test_memory_general.cpp.o
-
-tests/memory_test/test_memory_general.i: tests/memory_test/test_memory_general.cpp.i
-.PHONY : tests/memory_test/test_memory_general.i
-
-# target to preprocess a source file
-tests/memory_test/test_memory_general.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.i
-.PHONY : tests/memory_test/test_memory_general.cpp.i
-
-tests/memory_test/test_memory_general.s: tests/memory_test/test_memory_general.cpp.s
-.PHONY : tests/memory_test/test_memory_general.s
-
-# target to generate assembly for a file
-tests/memory_test/test_memory_general.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.s
-.PHONY : tests/memory_test/test_memory_general.cpp.s
-
-tests/memory_test/test_memory_regs_mix.o: tests/memory_test/test_memory_regs_mix.cpp.o
-.PHONY : tests/memory_test/test_memory_regs_mix.o
-
-# target to build an object file
-tests/memory_test/test_memory_regs_mix.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.o
-.PHONY : tests/memory_test/test_memory_regs_mix.cpp.o
-
-tests/memory_test/test_memory_regs_mix.i: tests/memory_test/test_memory_regs_mix.cpp.i
-.PHONY : tests/memory_test/test_memory_regs_mix.i
-
-# target to preprocess a source file
-tests/memory_test/test_memory_regs_mix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.i
-.PHONY : tests/memory_test/test_memory_regs_mix.cpp.i
-
-tests/memory_test/test_memory_regs_mix.s: tests/memory_test/test_memory_regs_mix.cpp.s
-.PHONY : tests/memory_test/test_memory_regs_mix.s
-
-# target to generate assembly for a file
-tests/memory_test/test_memory_regs_mix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/memory_test/test_memory_regs_mix.cpp.s
-.PHONY : tests/memory_test/test_memory_regs_mix.cpp.s
-
-tests/regs_test/test_regs.o: tests/regs_test/test_regs.cpp.o
-.PHONY : tests/regs_test/test_regs.o
-
-# target to build an object file
-tests/regs_test/test_regs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.o
-.PHONY : tests/regs_test/test_regs.cpp.o
-
-tests/regs_test/test_regs.i: tests/regs_test/test_regs.cpp.i
-.PHONY : tests/regs_test/test_regs.i
-
-# target to preprocess a source file
-tests/regs_test/test_regs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.i
-.PHONY : tests/regs_test/test_regs.cpp.i
-
-tests/regs_test/test_regs.s: tests/regs_test/test_regs.cpp.s
-.PHONY : tests/regs_test/test_regs.s
-
-# target to generate assembly for a file
-tests/regs_test/test_regs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/regs_test/test_regs.cpp.s
-.PHONY : tests/regs_test/test_regs.cpp.s
-
-tests/stages_test/test_fetch.o: tests/stages_test/test_fetch.cpp.o
-.PHONY : tests/stages_test/test_fetch.o
-
-# target to build an object file
-tests/stages_test/test_fetch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch.cpp.o
-.PHONY : tests/stages_test/test_fetch.cpp.o
-
-tests/stages_test/test_fetch.i: tests/stages_test/test_fetch.cpp.i
-.PHONY : tests/stages_test/test_fetch.i
-
-# target to preprocess a source file
-tests/stages_test/test_fetch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch.cpp.i
-.PHONY : tests/stages_test/test_fetch.cpp.i
-
-tests/stages_test/test_fetch.s: tests/stages_test/test_fetch.cpp.s
-.PHONY : tests/stages_test/test_fetch.s
-
-# target to generate assembly for a file
-tests/stages_test/test_fetch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch.cpp.s
-.PHONY : tests/stages_test/test_fetch.cpp.s
-
-tests/stages_test/test_fetch_decode.o: tests/stages_test/test_fetch_decode.cpp.o
-.PHONY : tests/stages_test/test_fetch_decode.o
-
-# target to build an object file
-tests/stages_test/test_fetch_decode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode.cpp.o
-.PHONY : tests/stages_test/test_fetch_decode.cpp.o
-
-tests/stages_test/test_fetch_decode.i: tests/stages_test/test_fetch_decode.cpp.i
-.PHONY : tests/stages_test/test_fetch_decode.i
-
-# target to preprocess a source file
-tests/stages_test/test_fetch_decode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode.cpp.i
-.PHONY : tests/stages_test/test_fetch_decode.cpp.i
-
-tests/stages_test/test_fetch_decode.s: tests/stages_test/test_fetch_decode.cpp.s
-.PHONY : tests/stages_test/test_fetch_decode.s
-
-# target to generate assembly for a file
-tests/stages_test/test_fetch_decode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode.cpp.s
-.PHONY : tests/stages_test/test_fetch_decode.cpp.s
-
-tests/stages_test/test_fetch_decode_execute.o: tests/stages_test/test_fetch_decode_execute.cpp.o
-.PHONY : tests/stages_test/test_fetch_decode_execute.o
-
-# target to build an object file
-tests/stages_test/test_fetch_decode_execute.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.o
-.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.o
-
-tests/stages_test/test_fetch_decode_execute.i: tests/stages_test/test_fetch_decode_execute.cpp.i
-.PHONY : tests/stages_test/test_fetch_decode_execute.i
-
-# target to preprocess a source file
-tests/stages_test/test_fetch_decode_execute.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.i
-.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.i
-
-tests/stages_test/test_fetch_decode_execute.s: tests/stages_test/test_fetch_decode_execute.cpp.s
-.PHONY : tests/stages_test/test_fetch_decode_execute.s
-
-# target to generate assembly for a file
-tests/stages_test/test_fetch_decode_execute.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.s
-.PHONY : tests/stages_test/test_fetch_decode_execute.cpp.s
-
-tests/test_main.o: tests/test_main.cpp.o
-.PHONY : tests/test_main.o
-
-# target to build an object file
-tests/test_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_main.cpp.o
-.PHONY : tests/test_main.cpp.o
-
-tests/test_main.i: tests/test_main.cpp.i
-.PHONY : tests/test_main.i
-
-# target to preprocess a source file
-tests/test_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_main.cpp.i
-.PHONY : tests/test_main.cpp.i
-
-tests/test_main.s: tests/test_main.cpp.s
-.PHONY : tests/test_main.s
-
-# target to generate assembly for a file
-tests/test_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_main.cpp.s
-.PHONY : tests/test_main.cpp.s
-
-tests/unitTest/test_sum_array.o: tests/unitTest/test_sum_array.cpp.o
-.PHONY : tests/unitTest/test_sum_array.o
-
-# target to build an object file
-tests/unitTest/test_sum_array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.o
-.PHONY : tests/unitTest/test_sum_array.cpp.o
-
-tests/unitTest/test_sum_array.i: tests/unitTest/test_sum_array.cpp.i
-.PHONY : tests/unitTest/test_sum_array.i
-
-# target to preprocess a source file
-tests/unitTest/test_sum_array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.i
-.PHONY : tests/unitTest/test_sum_array.cpp.i
-
-tests/unitTest/test_sum_array.s: tests/unitTest/test_sum_array.cpp.s
-.PHONY : tests/unitTest/test_sum_array.s
-
-# target to generate assembly for a file
-tests/unitTest/test_sum_array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.s
-.PHONY : tests/unitTest/test_sum_array.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1234,7 +762,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... emulator"
-	@echo "... run_tests"
 	@echo "... src/Core/ALU.o"
 	@echo "... src/Core/ALU.i"
 	@echo "... src/Core/ALU.s"
@@ -1313,54 +840,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/InstType_test/test_B-Type.o"
-	@echo "... tests/InstType_test/test_B-Type.i"
-	@echo "... tests/InstType_test/test_B-Type.s"
-	@echo "... tests/InstType_test/test_I-Type.o"
-	@echo "... tests/InstType_test/test_I-Type.i"
-	@echo "... tests/InstType_test/test_I-Type.s"
-	@echo "... tests/InstType_test/test_R-Type.o"
-	@echo "... tests/InstType_test/test_R-Type.i"
-	@echo "... tests/InstType_test/test_R-Type.s"
-	@echo "... tests/InstType_test/test_SL-Type.o"
-	@echo "... tests/InstType_test/test_SL-Type.i"
-	@echo "... tests/InstType_test/test_SL-Type.s"
-	@echo "... tests/InstType_test/test_U-Type.o"
-	@echo "... tests/InstType_test/test_U-Type.i"
-	@echo "... tests/InstType_test/test_U-Type.s"
-	@echo "... tests/memory_test/test_dmem.o"
-	@echo "... tests/memory_test/test_dmem.i"
-	@echo "... tests/memory_test/test_dmem.s"
-	@echo "... tests/memory_test/test_imem.o"
-	@echo "... tests/memory_test/test_imem.i"
-	@echo "... tests/memory_test/test_imem.s"
-	@echo "... tests/memory_test/test_memory_bus.o"
-	@echo "... tests/memory_test/test_memory_bus.i"
-	@echo "... tests/memory_test/test_memory_bus.s"
-	@echo "... tests/memory_test/test_memory_general.o"
-	@echo "... tests/memory_test/test_memory_general.i"
-	@echo "... tests/memory_test/test_memory_general.s"
-	@echo "... tests/memory_test/test_memory_regs_mix.o"
-	@echo "... tests/memory_test/test_memory_regs_mix.i"
-	@echo "... tests/memory_test/test_memory_regs_mix.s"
-	@echo "... tests/regs_test/test_regs.o"
-	@echo "... tests/regs_test/test_regs.i"
-	@echo "... tests/regs_test/test_regs.s"
-	@echo "... tests/stages_test/test_fetch.o"
-	@echo "... tests/stages_test/test_fetch.i"
-	@echo "... tests/stages_test/test_fetch.s"
-	@echo "... tests/stages_test/test_fetch_decode.o"
-	@echo "... tests/stages_test/test_fetch_decode.i"
-	@echo "... tests/stages_test/test_fetch_decode.s"
-	@echo "... tests/stages_test/test_fetch_decode_execute.o"
-	@echo "... tests/stages_test/test_fetch_decode_execute.i"
-	@echo "... tests/stages_test/test_fetch_decode_execute.s"
-	@echo "... tests/test_main.o"
-	@echo "... tests/test_main.i"
-	@echo "... tests/test_main.s"
-	@echo "... tests/unitTest/test_sum_array.o"
-	@echo "... tests/unitTest/test_sum_array.i"
-	@echo "... tests/unitTest/test_sum_array.s"
 .PHONY : help
 
 

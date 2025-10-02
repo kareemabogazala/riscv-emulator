@@ -804,10 +804,9 @@ CMakeFiles/emulator.dir/src/Utils/DecoderUtiles.cpp.o: \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/JType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/IType.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/LType.h \

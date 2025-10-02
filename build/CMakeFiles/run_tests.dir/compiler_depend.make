@@ -1638,6 +1638,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/BType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -2448,6 +2449,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/CSRType.cpp.o: /Users/kareemaboga
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -3259,6 +3261,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/IType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -4070,6 +4073,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/JType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -4881,6 +4885,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/LType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -5692,6 +5697,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/RTpe.cpp.o: /Users/kareemabogazal
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -6503,6 +6509,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/SType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -7313,6 +7320,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/SystemType.cpp.o: /Users/kareemab
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -8124,6 +8132,7 @@ CMakeFiles/run_tests.dir/src/InstructionFormat/UType.cpp.o: /Users/kareemabogaza
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -8317,6 +8326,7 @@ CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/P
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h \
@@ -8369,6 +8379,22 @@ CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/P
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -8736,7 +8762,9 @@ CMakeFiles/run_tests.dir/src/Memory/DMEM.cpp.o: /Users/kareemabogazala/Desktop/P
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
@@ -10547,6 +10575,7 @@ CMakeFiles/run_tests.dir/src/Memory/MemoryBus.cpp.o: /Users/kareemabogazala/Desk
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
 
 CMakeFiles/run_tests.dir/src/Memory/memory.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/src/Memory/memory.cpp \
@@ -13587,6 +13616,7 @@ CMakeFiles/run_tests.dir/src/RISCV.cpp.o: /Users/kareemabogazala/Desktop/Project
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -14401,6 +14431,7 @@ CMakeFiles/run_tests.dir/src/Stages/DecodeStage.cpp.o: /Users/kareemabogazala/De
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -15214,6 +15245,7 @@ CMakeFiles/run_tests.dir/src/Stages/ExecuteStage.cpp.o: /Users/kareemabogazala/D
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -16025,6 +16057,7 @@ CMakeFiles/run_tests.dir/src/Stages/FetchStage.cpp.o: /Users/kareemabogazala/Des
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -16835,6 +16868,7 @@ CMakeFiles/run_tests.dir/src/Stages/MemoryStage.cpp.o: /Users/kareemabogazala/De
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -17645,6 +17679,7 @@ CMakeFiles/run_tests.dir/src/Stages/WritebackStage.cpp.o: /Users/kareemabogazala
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -18464,6 +18499,7 @@ CMakeFiles/run_tests.dir/src/Utils/DecoderUtiles.cpp.o: /Users/kareemabogazala/D
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -19332,7 +19368,9 @@ CMakeFiles/run_tests.dir/tests/InstType_test/test_B-Type.cpp.o: /Users/kareemabo
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -20201,7 +20239,9 @@ CMakeFiles/run_tests.dir/tests/InstType_test/test_I-Type.cpp.o: /Users/kareemabo
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -21075,7 +21115,9 @@ CMakeFiles/run_tests.dir/tests/InstType_test/test_R-Type.cpp.o: /Users/kareemabo
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -21949,7 +21991,9 @@ CMakeFiles/run_tests.dir/tests/InstType_test/test_SL-Type.cpp.o: /Users/kareemab
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -22823,7 +22867,9 @@ CMakeFiles/run_tests.dir/tests/InstType_test/test_U-Type.cpp.o: /Users/kareemabo
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -25404,10 +25450,9 @@ CMakeFiles/run_tests.dir/tests/memory_test/test_memory_bus.cpp.o: /Users/kareema
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/external/catch.hpp \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
-  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h
 
 CMakeFiles/run_tests.dir/tests/memory_test/test_memory_general.cpp.o: /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/memory_test/test_memory_general.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
@@ -28840,7 +28885,9 @@ CMakeFiles/run_tests.dir/tests/stages_test/test_fetch.cpp.o: /Users/kareemabogaz
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -29710,7 +29757,9 @@ CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode.cpp.o: /Users/karee
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -30581,7 +30630,9 @@ CMakeFiles/run_tests.dir/tests/stages_test/test_fetch_decode_execute.cpp.o: /Use
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/InstructionFormat/InstructionFormat.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -32364,6 +32415,7 @@ CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.o: /Users/kareemaboga
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/DMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/IMEM.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryBus.h \
+  /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/memory.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSR.h \
   /Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/REGS/CSRAddr.h \
@@ -32438,6 +32490,8 @@ CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.o: /Users/kareemaboga
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/InstType_test/test_SL-Type.cpp:
 
 /Users/kareemabogazala/Desktop/Projects/riscv-emulator/tests/InstType_test/test_R-Type.cpp:
+
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/Memory.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random:
 
@@ -33682,6 +33736,8 @@ CMakeFiles/run_tests.dir/tests/unitTest/test_sum_array.cpp.o: /Users/kareemaboga
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/arithmetic.h:
+
+/Users/kareemabogazala/Desktop/Projects/riscv-emulator/include/Memory/MemoryLayout.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h:
 
