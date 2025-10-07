@@ -50,3 +50,11 @@ brew install riscv-tools
 mkdir build && cd build
 cmake ..
 make
+
+--
+
+## 💻 Running C Programs
+
+You can now compile and run C programs directly on the emulator using the helper script:
+
+bash scripts/build_and_run.sh path/to/program.c
