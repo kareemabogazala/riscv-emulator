@@ -24,6 +24,9 @@ public:
     std::shared_ptr<MemoryBus> bus; // Unified memory interface
     uint32_t pc = 0;                // Program counter
     uint32_t end_address;
+    bool halted = false;
+    int exit_code = 0;
+    
     ControlLogic control_logic;
 
     // Trap redirect state (for exceptions & interrupts)

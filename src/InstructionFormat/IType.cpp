@@ -26,6 +26,15 @@ void IType::generateControlSignals(ControlLogic &control) const
     signals.ImmSelCode = ImmSel::IMM_I;
     signals.WBSelCode = WBSel::WB_ALU;
 
+    if (opcode == 0x67)
+    {                    // JALR
+        signals.PCSel = true;  // cause PC to update to jump target
+        signals.RegWEn = true; // write return address to rd
+        signals.ASel = ALU_A::RS1;
+        signals.BSel = ALU_B::IMM;
+        signals.ALUSel = ALUOp::ADD; // compute target = rs1 + imm
+    }
+
     control.controlSignals = signals;
 
     if (DEBUG.decode)

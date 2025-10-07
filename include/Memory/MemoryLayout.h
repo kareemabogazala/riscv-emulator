@@ -63,5 +63,8 @@ namespace MemoryLayout
     constexpr uint32_t HEAP_BASE = 0x80400000;
     constexpr uint32_t USER_BASE = 0x88000000;
     constexpr uint32_t MMIO_BASE = 0x8F000000;
+    constexpr uint32_t MMIO_EXIT = MMIO_BASE + 0x100; // e.g., 0x8F000100
+
+    
     constexpr uint32_t STACK_TOP = 0x90000000; // End of RAM
 }

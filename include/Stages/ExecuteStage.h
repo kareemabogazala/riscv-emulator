@@ -13,6 +13,7 @@ class ExecuteStage : public Stage {
 
     bool is_system_instruction(RISCV& cpu);
     void handle_system_instruction(RISCV& cpu);
+    void handle_csr_instruction(RISCV& cpu);
     //
     void dump_EXMEM(RISCV& cpu) const;
 };

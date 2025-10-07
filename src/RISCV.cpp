@@ -49,7 +49,7 @@ int RISCV::run(int max_cycles)
        {
            bus->ram.dump(0x00100000, 0x00100010, default_transform2);
        }
-      // if (pc >= end_address) break;
+       if (halted) break;
     }
     return cycle;
 }
@@ -78,7 +78,14 @@ void RISCV::update_pc()
         // Default sequential execution
         pc = if_id.pc_next;
     }
-   
+    // 🔹 Check MMIO exit register
+    uint32_t exit_code = bus->ram.read32(MemoryLayout::MMIO_EXIT);
+    if (exit_code != 0)
+    {
+        halted = true;
+        this->exit_code = static_cast<int>(exit_code);
+    }
+
     if (pc % 4 != 0)
         throw std::runtime_error("Unaligned PC detected: " + std::to_string(pc));
 }

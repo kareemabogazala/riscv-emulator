@@ -38,4 +38,7 @@ loop:
     jal x0, loop
 
 done:
-    jal x0, done           # Infinite loop to halt
+      # --- Exit with ECALL ---
+    li   a7, 93              # syscall number for exit (Linux ABI uses 93)
+    li   a0, 1               # exit code 0
+    ecall
