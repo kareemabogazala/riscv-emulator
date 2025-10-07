@@ -1,41 +1,35 @@
 #include "RISCV.h"
-#include "Memory/IMEM.h"
-#include "Memory/DMEM.h"
 #include "Memory/MemoryBus.h"
+#include "Memory/MemoryLayout.h"
 #include "DebugConfig.h"
 #include <iostream>
 #include <memory>
 
-uint32_t default_transform(uint32_t val) { return val; }
-
 int main()
 {
-   /* DEBUG.decode = true; // Decode stage tracing
-    DEBUG.fetch = true;  // Fetch stage tracing
-    DEBUG.reg_dump = true;       // Print register file
-    DEBUG.mem_access = true;     // Print memory read/write
-    DEBUG.RISCV_IDEX = true;
-    DEBUG.ALU = true;
-    DEBUG.execute = true;*/
-  // DEBUG.dump_dmem_every_cycle = true;
-   IMem imem(0x00000000, 0x20000);
-   DMem dmem(0x00100000, 0x20000);
-   auto bus = std::make_shared<MemoryBus>(dmem, imem);
+   Memory ram(MemoryLayout::RAM_BASE, MemoryLayout::RAM_SIZE);
+   auto bus = std::make_shared<MemoryBus>(ram);
    RISCV cpu(bus);
-   cpu.csr.write(CSRAddr::MTVEC, 0x400);
 
-   // Handler code (addi t1,t1,1 ; mret)
-   cpu.load_program("../AssemblyCode/trap_handler.bin", 0x400);
+   // Set mtvec to trap handler base
+   cpu.csr.write(CSRAddr::MTVEC, MemoryLayout::MTVEC_BASE);
 
-   cpu.load_program("../AssemblyCode/ecall.bin", 0x0);
+   // Load trap handler at MTVEC
+   cpu.load_program("../AssemblyCode/bin/trap_handler.bin", MemoryLayout::MTVEC_BASE);
 
-   std::cout << "\n[Before Execution] Register Dump:\n";
-   cpu.regs.dump();
+   // Load test program (jal test) at KERNEL_BASE
+   cpu.load_program("../AssemblyCode/Ccode/test.bin", MemoryLayout::KERNEL_BASE);
 
-   cpu.run(20); // allow enough cycles
+   int x = cpu.run(2000); // run enough cycles
 
-   std::cout << "\n[After Execution] Register Dump:\n";
-   cpu.regs.dump();
+   std::cout<<"number of cycles: "<<x<<"\n";
+   std::cout<<"the exit code is: "<<cpu.exit_code<<"\n";
+   /* std::cout << "\n[After Execution] Register Dump:\n";
+    cpu.regs.dump();
 
+    std::cout << "\n[Stack Test Results @0x80010000]\n";
+    bus->ram.dump(0x80010000, 0x80010010, [](uint32_t val)
+                  { return val; });
+ */
    return 0;
 }

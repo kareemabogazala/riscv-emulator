@@ -18,6 +18,8 @@ std::unique_ptr<InstructionFormat> chooseFormat(uint8_t opcode, uint8_t funct3)
         return std::make_unique<RType>();
     case 0x6F: // JAL
         return std::make_unique<JType>();
+    case 0x67: // JALR
+        return std::make_unique<IType>();
     case 0x13: // I-type ALU
         return std::make_unique<IType>();
     case 0x03: // Loads

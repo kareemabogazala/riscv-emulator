@@ -32,23 +32,32 @@ void CSR::write(CSRAddr addr, uint32_t value)
     it->second = value;
 }
 
-// 🔹 Step-1 helpers
-void CSR::trap_on_ecall(uint32_t pc)
+void CSR::trap(uint32_t cause, uint32_t pc, uint32_t tval)
 {
+    // Save faulting instruction address
     csrs[CSRAddr::MEPC] = pc;
-    csrs[CSRAddr::MCAUSE] = 11; // ECALL from M-mode
-    csrs[CSRAddr::MTVAL] = 0;
+    csrs[CSRAddr::MCAUSE] = cause;
+    csrs[CSRAddr::MTVAL] = tval;
 
+    // Handle mstatus bits
     uint32_t ms = csrs[CSRAddr::MSTATUS];
     uint32_t oldMIE = (ms & MSTATUS_MIE) ? 1u : 0u;
 
-    // Update mstatus: MPIE <- MIE, MIE <- 0, MPP <- 3 (M-mode)
+    // Update mstatus:
+    // - MPIE <- MIE
+    // - MIE <- 0 (disable interrupts while in trap)
+    // - MPP <- 3 (M-mode, for now)
     ms &= ~MSTATUS_MIE;
     ms = (ms & ~MSTATUS_MPIE) | (oldMIE << 7);
     ms = (ms & ~MSTATUS_MPP_MASK) | (3u << MSTATUS_MPP_SHIFT);
 
     csrs[CSRAddr::MSTATUS] = ms;
 }
+void CSR::trap_on_ecall(uint32_t pc)
+{
+    trap(11, pc, 0); // 11 = ECALL from M-mode, tval=0
+}
+
 
 uint32_t CSR::do_mret()
 {
