@@ -32,9 +32,6 @@ The entire emulator was written in my free time, from an empty folder, as part o
 
 ---
 
-
----
-
 ## 🧰 Build Instructions
 
 ### 1. Install RISC-V Toolchain
