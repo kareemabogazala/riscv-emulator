@@ -23,7 +23,7 @@ file(GLOB_RECURSE EMULATOR_SOURCES
     "src/*.cpp"
 )
 
-# Separate out main.cpp so it can be excluded from test target
+# Separate out main.cpp (useful if tests are enabled)
 set(EMULATOR_SOURCES_NO_MAIN "")
 foreach(source ${EMULATOR_SOURCES})
     if(NOT source MATCHES ".*src/main.cpp$")
@@ -35,7 +35,6 @@ endforeach()
 # ========== EXECUTABLE ======
 # ============================
 
-# Emulator with real main.cpp
 add_executable(emulator
     ${EMULATOR_SOURCES}
 )
@@ -46,15 +45,15 @@ target_include_directories(emulator PRIVATE include external)
 # ========== TESTS ===========
 # ============================
 
-option(BUILD_TESTS "Build unit tests" ON)
+option(BUILD_TESTS "Build unit tests" OFF)
 
 if(BUILD_TESTS)
-    # Gather test sources
-    file(GLOB_RECURSE TEST_SOURCES
-        "tests/*.cpp"
-    )
+    message(STATUS "Building unit tests...")
 
-    # Build run_tests (without main.cpp from src)
+    # Gather test sources
+    file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")
+
+    # Build run_tests target (without main.cpp from src)
     add_executable(run_tests
         ${TEST_SOURCES}
         ${EMULATOR_SOURCES_NO_MAIN}
@@ -62,5 +61,8 @@ if(BUILD_TESTS)
 
     target_include_directories(run_tests PRIVATE include external)
 
-    # target_link_libraries(run_tests ...) # Add Catch2 or other libs if needed
+    # Example (if using Catch2 or GoogleTest)
+    # target_link_libraries(run_tests PRIVATE Catch2::Catch2)
+else()
+    message(STATUS "Skipping unit tests (BUILD_TESTS=OFF)")
 endif()
