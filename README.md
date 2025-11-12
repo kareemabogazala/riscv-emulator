@@ -1,18 +1,18 @@
-# riscv-emulator
-# 🧠 RISC-V Emulator  
+# riscv-simulator
+# 🧠 RISC-V Simulator  
 *A single-cycle RISC-V RV32I CPU written entirely from scratch in modern C++*  
 
 ---
 
 ## 🚀 Overview
-This project is a **from-scratch implementation of a RISC-V CPU emulator**, built as a personal exploration into **computer architecture, CPU design, and low-level systems**.  
+This project is a **from-scratch implementation of a RISC-V CPU simulator**, built as a personal exploration into **computer architecture, CPU design, and low-level systems**.  
 
 It currently supports the **RV32I base instruction set**, full **memory mapping**, and can **run compiled C programs** without any external operating system.  
 
 I started this project after completing the **Operating Systems Engineering (JOS)** course, where I built a basic OS.  
 That experience made me curious about what happens *below* the OS — so I decided to build the CPU itself.  
 
-The entire emulator was written in my free time, from an empty folder, as part of my journey to understand hardware/software interaction at the lowest level.
+The entire simulator was written in my free time, from an empty folder, as part of my journey to understand hardware/software interaction at the lowest level.
 
 ---
 
@@ -43,7 +43,7 @@ brew tap riscv/riscv
 brew install riscv-tools
 
 
-2. Build the Emulator
+2. Build the Simulator
 mkdir build && cd build
 cmake ..
 make
@@ -52,6 +52,6 @@ make
 
 ## 💻 Running C Programs
 
-You can now compile and run C programs directly on the emulator using the helper script:
+You can now compile and run C programs directly on the simulator using the helper script:
 
 bash scripts/build_and_run.sh path/to/program.c
