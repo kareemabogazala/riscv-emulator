@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
       std::cerr << "Usage: " << argv[0] << " <program.bin>" << std::endl;
       return 1;
    }
+   int x;
 
    const char *programPath = argv[1];
 
